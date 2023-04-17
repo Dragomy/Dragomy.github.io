@@ -36,8 +36,17 @@
 	border: 1px solid #ccc;
 	margin-right: 20px;
 	margin-bottom: 20px;
+	transition: transform 0.2s ease-in-out;
 }
 
-.results div:last-child {
-	margin-right: 0;
+.results div:hover {
+	transform: scale(1.05);
+}
+
+.results div.active {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) scale(2);
+	z-index: 9999;
 }
