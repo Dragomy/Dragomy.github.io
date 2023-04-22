@@ -54,11 +54,11 @@
 	width: 100%;
 	height: calc(100% - 30px);
 	overflow: auto;
-	padding: 16px;
+	padding: 5px;
   }
   
   .win {
 	font-family: "Segoe UI", Tahoma, sans-serif;
-	 padding: 9px;
+	 padding: 5px;
   }
   
