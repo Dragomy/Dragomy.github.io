@@ -1,8 +1,19 @@
-/* Windows XP Window Styles */
-.window {
+
+.myavatar {
 	display: inline-block;
 	position: relative;
-	width: 400px;
+	width: 290px;
+	height: 315px;
+	background-color: #000000;
+	border: 3px solid #6b76d1;
+	box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.75);
+	/*overflow: hidden;*/
+	margin: 0 auto;
+  }
+  .aboutme {
+	display: inline-block;
+	position: relative;
+	width: 500px;
 	height: 300px;
 	background-color: #efedde;
 	border: 3px solid #6b76d1;
@@ -10,6 +21,19 @@
 	overflow: hidden;
 	margin: 0 auto;
   }
+  .findme {
+	display: inline-block;
+	position: relative;
+	width: 200px;
+	height: 220px;
+	background-color: #efedde;
+	border: 3px solid #6b76d1;
+	box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.75);
+	overflow: hidden;
+	margin: 0 auto;
+  }
+  
+  /* Windows Styles */
   .window-header {
 	position: relative;
 	height: 30px;
@@ -54,11 +78,10 @@
 	width: 100%;
 	height: calc(100% - 30px);
 	overflow: auto;
-	padding: 5px;
+	padding: 16px;
   }
-  
   .win {
 	font-family: "Segoe UI", Tahoma, sans-serif;
-	 padding: 5px;
+	 padding: 9px;
   }
   
