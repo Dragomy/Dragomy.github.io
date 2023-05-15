@@ -1,88 +1,101 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Dragomy</title>
+	<title>Dragomy`s personal site</title>
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+	<!-- "Taskbar"-Menu -->
+	<div class="taskbar">
+		<div class="application">Test1</div>
+		<div class="application">Test2</div>
+		<div class="application">Test3</div>
+		<div class="application">Test4</div>
+	  </div>
 	<!-- My_Avatar.png -->
-<div class="myavatar">
-	<div class="window-header">
-	  <span>🖼️ My_Avatar.png</span>
-	  <div class="window-buttons">
-		<button class="minimize"></button>
-		<button class="maximize"></button>
-		<button class="close"></button>
+	<div class="myavatar">
+	  <div class="window-header">
+		<span>🖼️ My_Avatar.png</span>
+		<div class="window-buttons">
+		  <button class="minimize"></button>
+		  <button class="maximize"></button>
+		  <button class="close"></button>
+		</div>
+	  </div>
+	  <div class="window-content">
+		<img src="https://avatars.githubusercontent.com/u/95567734?v=4" alt="win-img">
 	  </div>
 	</div>
-	<div class="window-content">
-	  <img src="https://avatars.githubusercontent.com/u/95567734?v=4" alt="win-img">
-	</div>
-  </div>
-  <!-- About_Me.txt -->
-  <div class="aboutme">
-	<div class="window-header">
-	  <span>📄About_Me.txt</span>
-	  <div class="window-buttons">
-		<button class="minimize"></button>
-		<button class="maximize"></button>
-		<button class="close"></button>
+	<!-- About_Me.txt -->
+	<div class="aboutme">
+	  <div class="window-header">
+		<span>📄About_Me.txt</span>
+		<div class="window-buttons">
+		  <button class="minimize"></button>
+		  <button class="maximize"></button>
+		  <button class="close"></button>
+		</div>
+	  </div>
+	  <div class="window-content">
+	  <p class="win">I am a Student programming in Java, GDScript, and C#. I have experience working on a variety of projects using these languages, including desktop applications(for fun non released) and mobile apps(games on itch.io). I am always looking to expand my knowledge and skills, and I am particularly interested in learning more about Front-End Development / Deep Learning Technologie.</p>
 	  </div>
 	</div>
-	<div class="window-content">
-	<p class="win">I am a Student programming in Java, GDScript, and C#. I have experience working on a variety of projects using these languages, including desktop applications(for fun non released) and mobile apps(games on itch.io). I am always looking to expand my knowledge and skills, and I am particularly interested in learning more about Front-End Development / Deep Learning Technologie.</p>
-	</div>
-  </div>
-  <!-- FINDME -->
-  <div class="findme">
-	<div class="window-header">
-	  <span>🗺️ FIND ME</span>
-	  <div class="window-buttons">
-		<button class="minimize"></button>
-		<button class="maximize"></button>
-		<button class="close"></button>
+	<!-- FINDME -->
+	<div class="findme">
+	  <div class="window-header">
+		<span>🗺️ FIND ME</span>
+		<div class="window-buttons">
+		  <button class="minimize"></button>
+		  <button class="maximize"></button>
+		  <button class="close"></button>
+		</div>
+	  </div>
+	  <div class="window-content">
+		<div class="LINK">
+		  <a href="https://twitter.com/Dragomy2"><span>&#x1F426;</span> Twitter</a>
+		</div>
+		<div class="LINK">
+		  <a href="https://stackoverflow.com/users/20522304/dragomy"><span>&#x1F4BB;</span>Stackoverflow</a>
+	
+		</div>
+		<div class="LINK">
+		  <a href="https://github.com/Dragomy"><span>&#x1F5C4;</span> GitHub</a>
+		</div>
+		<div class="LINK">
+		  <a href="mailto:dragomy1.02@gmail.com"><span>&#x1F4E7;</span>Email</a>
+	
+		</div>
 	  </div>
 	</div>
-	<div class="window-content">
-	  <div class="LINK">
-		<a href="https://twitter.com/Dragomy2"><span>&#x1F426;</span> Twitter</a>
+	<!-- UpdateTerminal -->
+	<div class="terminal">
+	  <div class="window-header">
+		<span>⚙️Command Prompt</span>
+		<div class="window-buttons">
+		  <button class="minimize"></button>
+		  <button class="maximize"></button>
+		  <button class="close"></button>
+		</div>
 	  </div>
-	  <div class="LINK">
-		<a href="https://stackoverflow.com/users/20522304/dragomy"><span>&#x1F4BB;</span>Stackoverflow</a>
-  
-	  </div>
-	  <div class="LINK">
-		<a href="https://github.com/Dragomy"><span>&#x1F5C4;</span> GitHub</a>
-	  </div>
-	  <div class="LINK">
-		<a href="mailto:dragomy1.02@gmail.com"><span>&#x1F4E7;</span>Email</a>
-  
-	  </div>
-	</div>
-  </div>
-  <!-- UpdateTerminal -->
-  <div class="terminal">
-	<div class="window-header">
-	  <span>⚙️Command Prompt</span>
-	  <div class="window-buttons">
-		<button class="minimize"></button>
-		<button class="maximize"></button>
-		<button class="close"></button>
+	  <div class="window-content">
+		<!-- Terminal -->
+	  <h> Start by typing help</h>
+	  <div class="terminal-output"></div>
+	  <div class="terminal-input">
+		<span class="terminal-prompt">$</span> 
+		<input type="text" id="terminal-input-field">
+		 </div>
 	  </div>
 	</div>
-	<div class="window-content">
-	  <!-- Terminal -->
-	<h> Start by typing help</h>
-	<div class="terminal-output"></div>
-	<div class="terminal-input">
-	  <span class="terminal-prompt">$</span> 
-	  <input type="text" id="terminal-input-field">
-	   </div>
-	</div>
-  </div>
 
 </body>
+
+<script 
+  
+  type="text/javascript" src="script.js">
+
+</script>
 </html>
 
 
