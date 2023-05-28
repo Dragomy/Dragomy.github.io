@@ -1,9 +1,20 @@
+/*CURRICULUM VITAE*/
 
+var toggleButton = document.getElementById('curvButton');
+var contentDiv = document.getElementById('curvitae');
 
+toggleButton.addEventListener('click', function() {
+  if (contentDiv.style.display === 'none') {
+    contentDiv.style.display = 'block';
+  } else {
+    contentDiv.style.display = 'none';
+  }
+});
+
+/*TERMINAL*/
 const inputField = document.getElementById('terminal-input-field');
 const output = document.querySelector('.terminal-output');
 
-/*Terminal Java Script */
 inputField.addEventListener('keydown', function(event) {
   if (event.key === "Enter") {
     let input = inputField.value;
@@ -54,5 +65,3 @@ inputField.addEventListener('keydown', function(event) {
     }
   }
 });
-
-/*Task/Menu-Bar Script */
