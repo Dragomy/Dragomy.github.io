@@ -1,15 +1,62 @@
 /*CURRICULUM VITAE*/
+var curvButton = document.getElementById('curvButton');
+var curvDiv = document.getElementById('curvitae');
 
-var toggleButton = document.getElementById('curvButton');
-var contentDiv = document.getElementById('curvitae');
-
-toggleButton.addEventListener('click', function() {
-  if (contentDiv.style.display === 'none') {
-    contentDiv.style.display = 'block';
+curvButton.addEventListener('click', function() {
+  if (curvDiv.style.display === 'none') {
+    curvDiv.style.display = 'block';
   } else {
-    contentDiv.style.display = 'none';
+    curvDiv.style.display = 'none';
   }
 });
+
+/*TERMINAL UP DOWN*/
+var termButton = document.getElementById('termButton');
+var termDiv = document.getElementById('term');
+
+termButton.addEventListener('click', function() {
+  if (termDiv.style.display === 'block') {
+    termDiv.style.display = 'none';
+  } else {
+    termDiv.style.display = 'block';
+  }
+});  
+
+/*findem UP DOWN*/
+var findmeButton = document.getElementById('findmeButton');
+var findmeDiv = document.getElementById('findme');
+
+findmeButton.addEventListener('click', function() {
+  if (findmeDiv.style.display === 'block') {
+    findmeDiv.style.display = 'none';
+  } else {
+    findmeDiv.style.display = 'block';
+  }
+});  
+
+/*MA Avata UP DOWN*/
+var avarButton = document.getElementById('avarButton');
+var mavataDIV = document.getElementById('mavata');
+
+avarButton.addEventListener('click', function() {
+  if (mavataDIV.style.display === 'block') {
+    mavataDIV.style.display = 'none';
+  } else {
+    mavataDIV.style.display = 'block';
+  }
+});  
+
+/*baut me*/
+var aboutButton = document.getElementById('aboutButton');
+var aboutmeDIV = document.getElementById('aboutme');
+
+aboutButton.addEventListener('click', function() {
+  if (aboutmeDIV.style.display === 'block') {
+    aboutmeDIV.style.display = 'none';
+  } else {
+    aboutmeDIV.style.display = 'block';
+  }
+});  
 
 /*TERMINAL*/
 const inputField = document.getElementById('terminal-input-field');
