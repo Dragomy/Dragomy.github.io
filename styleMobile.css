@@ -1,5 +1,5 @@
 body {
-      background-color: #4a148c; /* Dark purple background color */
+      background-color: #000000; 
       margin: 0;
       padding: 0;
       display: flex;
@@ -10,12 +10,12 @@ body {
       color: white;
     }
 
-    .message {
+.message {
       text-align: center;
       padding: 20px;
     }
 
-    @media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
       /* Styles for smaller screens */
       .message {
         font-size: 18px;
