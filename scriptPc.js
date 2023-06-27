@@ -1,3 +1,59 @@
+//ClickMe Minigame
+var counter = 0;
+function minigame() {
+//Move Game Window
+var container = document.getElementById("ClickMeWindow");
+var screenWidth = window.innerWidth;
+var screenHeight = window.innerHeight;
+
+var randomX = Math.floor(Math.random() * (screenWidth - container.offsetWidth));
+var randomY = Math.floor(Math.random() * (screenHeight - container.offsetHeight));
+
+container.style.left = randomX + "px";
+container.style.top = randomY + "px";
+  
+//FUN Values 
+counter = counter + 1;
+document.getElementById("counter").innerHTML = counter;
+  
+  if (counter == 2) {
+     document.getElementById("counter").innerHTML = "Double Click:" + counter;
+} else if (counter == 3) {
+     document.getElementById("counter").innerHTML = "Triple Click:"+ counter;
+} else if (counter == 4) {
+     document.getElementById("counter").innerHTML = "Overclick:"+ counter;
+} else if (counter == 5) {
+     document.getElementById("counter").innerHTML = "Clicktacular + Clicking Spree:"+ counter;
+} else if (counter == 6) {
+     document.getElementById("counter").innerHTML = "Clicktrocity:"+ counter;
+} else if (counter == 7) {
+     document.getElementById("counter").innerHTML = "Clickamanjaro:"+ counter;
+} else if (counter == 8) {
+     document.getElementById("counter").innerHTML = "Clicktastrophe:"+ counter;
+} else if (counter == 9) {
+     document.getElementById("counter").innerHTML = "Clickpocalypse:"+ counter;
+ } else if (counter == 10) {
+     document.getElementById("counter").innerHTML = "Clickionaire + Clicking Frenzy:"+ counter;
+} else if (counter == 15) {
+     document.getElementById("counter").innerHTML = "Clicking Riot:"+ counter;
+} else if (counter == 20) {
+     document.getElementById("counter").innerHTML = "Rampage:"+ counter;  
+} else if (counter == 25) {
+     document.getElementById("counter").innerHTML = "Nightmare:"+ counter;  
+} else if (counter == 30) {
+     document.getElementById("counter").innerHTML = "Boogeyman:"+ counter;  
+} else if (counter == 35) {
+     document.getElementById("counter").innerHTML = "Grim Reaper:"+ counter;  
+} else if (counter == 40) {
+     document.getElementById("counter").innerHTML = "Demon:"+ counter; 
+} else if (counter == 100) {
+     document.getElementById("counter").innerHTML = "Demon:"+ counter;  
+     window.location.href = 'bluescreen.html';
+
+}
+ 
+}
+//Other Scripts
 function toggleDisplay(elementId) {
   const element = document.getElementById(elementId);
   element.style.display = (element.style.display === 'none') ? 'block' : 'none';
@@ -81,3 +137,5 @@ inputField.addEventListener('keydown', function(event) {
     }
   }
 });
+
+

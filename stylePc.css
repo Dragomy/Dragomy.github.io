@@ -3,6 +3,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover +100%; 
 }
+
 /* Menue Styles */
 .taskbar {
   background-color: #6b76d1;
@@ -46,7 +47,7 @@ body {
   height: 315px;
   background-color: #000000;
   border: 3px solid #6b76d1;
-  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.75);
   margin: 0 auto;
 }
 .aboutme {
@@ -82,10 +83,8 @@ body {
 .terminal {
   display: inline-block;
   position: fixed;
-  
   top: 50%;
   right: 20%;
-  
   width: 500px;
   height: 320px;
   background-color: #000000;
@@ -99,6 +98,43 @@ body {
   
  
   
+}
+.ClickMeWindow {
+  display: inline-block;
+  position: absolute;
+  top: 15%;
+  right: 29%;
+  width: 400px;
+  height: 300px;
+  background-color: #efedde;
+  border: 3px solid #6b76d1;
+  box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.75);
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+/* ClickMe Button */
+.button_DCMIS{
+  position: absolute;
+  top: 65%;
+  left: 30%;
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #f00;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 9px #999;
+}
+.button_DCMIS:active {
+  background-color: #e00;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
 
 /*Terminal Special Styles*/
