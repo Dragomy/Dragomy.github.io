@@ -90,6 +90,7 @@ addButtonClickListener('closefindme', 'findme');
 addButtonClickListener('closemyavatar', 'mavata');
 addButtonClickListener('closeaboutme', 'aboutme');
 
+//Terminal Output
 const inputField = document.getElementById('terminal-input-field');
 const output = document.querySelector('.terminal-output');
 
@@ -103,7 +104,7 @@ inputField.addEventListener('keydown', function(event) {
       output.innerHTML = '';
     } 
     else if (input === "start") {
-      const text = "Hello and Welcome to this website. This is a Website showcasing something that should look a little bit like a Terminal ";
+      const text = "Hello and welcome to DragOS";
       let i = 0;
       const interval = setInterval(function() {
         if (i >= text.length) {
@@ -119,10 +120,10 @@ inputField.addEventListener('keydown', function(event) {
     else if (input === "help") {
       output.innerHTML += `
         <div>reset -- Clears the terminal output</div>
-        <div>start -- Displays welcome message</div>
+        <div>start -- Displays welcome message with a typing animation</div>
         <div>load -- Displays a loading animation</div>
         <div>help -- Displays this help message</div>
-        <div>Please leave command ideas here on CodePen or write me on Twitter :D </div>
+        <div></div>
       `;
     }
     else if (input === "load") {
@@ -133,7 +134,7 @@ inputField.addEventListener('keydown', function(event) {
         i++;
         if (i >= 12) { 
           clearInterval(interval);
-          output.innerHTML = 'This loadtime is totally faked. Sorry'; 
+          output.innerHTML = 'Loading loaded and executed succesfully!!'; 
         }
       }, 700); 
     }
