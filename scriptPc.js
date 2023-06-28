@@ -1,5 +1,7 @@
 //ClickMe Minigame
 var counter = 0;
+var timeoutId;
+
 function minigame() {
 //Move Game Window
 var container = document.getElementById("ClickMeWindow");
@@ -42,16 +44,19 @@ document.getElementById("counter").innerHTML = counter;
      document.getElementById("counter").innerHTML = "Nightmare:"+ counter;  
 } else if (counter == 30) {
      document.getElementById("counter").innerHTML = "Boogeyman:"+ counter;  
-} else if (counter == 35) {
+} else if (counter == 30) {
      document.getElementById("counter").innerHTML = "Grim Reaper:"+ counter;  
-} else if (counter == 40) {
-     document.getElementById("counter").innerHTML = "Demon:"+ counter; 
-} else if (counter == 100) {
+} else if (counter == 30) {
      document.getElementById("counter").innerHTML = "Demon:"+ counter;  
-     window.location.href = 'bluescreen.html';
-
 }
- 
+
+  // Reset counter if button is not pressed within 2 seconds
+  clearTimeout(timeoutId);
+  timeoutId = setTimeout(function () {
+    counter = 0;
+    document.getElementById("counter").innerHTML = counter;
+  }, 1000);
+  
 }
 //Other Scripts
 function toggleDisplay(elementId) {
