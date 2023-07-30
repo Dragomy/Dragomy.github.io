@@ -18,36 +18,67 @@ container.style.top = randomY + "px";
 counter = counter + 1;
 document.getElementById("counter").innerHTML = counter;
   
-  if (counter == 2) {
-     document.getElementById("counter").innerHTML = "Double Click:" + counter;
+
+if (counter < 2) {
+  document.getElementById("counter").innerHTML = "Double Click:" + counter;
+  document.getElementById("ClickMeWindow").style.backgroundColor = '#000000';
+  document.getElementById("ClickMeWindow").style.color = '#ffffff';
 } else if (counter == 3) {
      document.getElementById("counter").innerHTML = "Triple Click:"+ counter;
+     document.getElementById("ClickMeWindow").style.backgroundColor = '#111111';
+     document.getElementById("ClickMeWindow").style.color = '#eeeeee';
 } else if (counter == 4) {
      document.getElementById("counter").innerHTML = "Overclick:"+ counter;
+     document.getElementById("ClickMeWindow").style.backgroundColor = '#222222';
+     document.getElementById("ClickMeWindow").style.color = '#dddddd';
 } else if (counter == 5) {
      document.getElementById("counter").innerHTML = "Clicktacular + Clicking Spree:"+ counter;
+     document.getElementById("ClickMeWindow").style.backgroundColor = '#333333';
+     document.getElementById("ClickMeWindow").style.color = '#cccccc';
 } else if (counter == 6) {
      document.getElementById("counter").innerHTML = "Clicktrocity:"+ counter;
+     document.getElementById("ClickMeWindow").style.backgroundColor = '#444444';
+     document.getElementById("ClickMeWindow").style.color = '#bbbbbb';
 } else if (counter == 7) {
      document.getElementById("counter").innerHTML = "Clickamanjaro:"+ counter;
+     document.getElementById("ClickMeWindow").style.backgroundColor = '#555555';
+     document.getElementById("ClickMeWindow").style.color = '#aaaaaa';
 } else if (counter == 8) {
      document.getElementById("counter").innerHTML = "Clicktastrophe:"+ counter;
+     document.getElementById("ClickMeWindow").style.backgroundColor = '#666666';
+     document.getElementById("ClickMeWindow").style.color = '#999999';
 } else if (counter == 9) {
      document.getElementById("counter").innerHTML = "Clickpocalypse:"+ counter;
+     document.getElementById("ClickMeWindow").style.backgroundColor = '#777777';
+     document.getElementById("ClickMeWindow").style.color = '#888888';
  } else if (counter == 10) {
      document.getElementById("counter").innerHTML = "Clickionaire + Clicking Frenzy:"+ counter;
+     document.getElementById("ClickMeWindow").style.backgroundColor = '#888888';
+     document.getElementById("ClickMeWindow").style.color = '#777777';
 } else if (counter == 15) {
      document.getElementById("counter").innerHTML = "Clicking Riot:"+ counter;
+     document.getElementById("ClickMeWindow").style.backgroundColor = '#999999';
+     document.getElementById("ClickMeWindow").style.color = '#666666';
 } else if (counter == 20) {
-     document.getElementById("counter").innerHTML = "Rampage:"+ counter;  
+     document.getElementById("counter").innerHTML = "Rampage:"+ counter; 
+     document.getElementById("ClickMeWindow").style.backgroundColor = '#aaaaaa'; 
+     document.getElementById("ClickMeWindow").style.color = '#555555';
 } else if (counter == 25) {
      document.getElementById("counter").innerHTML = "Nightmare:"+ counter;  
+     document.getElementById("ClickMeWindow").style.backgroundColor = '#bbbbbb';
+     document.getElementById("ClickMeWindow").style.color = '#444444';
 } else if (counter == 30) {
      document.getElementById("counter").innerHTML = "Boogeyman:"+ counter;  
+     document.getElementById("ClickMeWindow").style.backgroundColor = '#cccccc';
+     document.getElementById("ClickMeWindow").style.color = '#333333';
 } else if (counter == 30) {
      document.getElementById("counter").innerHTML = "Grim Reaper:"+ counter;  
+     document.getElementById("ClickMeWindow").style.backgroundColor = '#dddddd';
+     document.getElementById("ClickMeWindow").style.color = '#222222';
 } else if (counter == 30) {
      document.getElementById("counter").innerHTML = "Demon:"+ counter;  
+     document.getElementById("ClickMeWindow").style.backgroundColor = '#eeeeee';
+     document.getElementById("ClickMeWindow").style.color = '#111111';
 }
 
   // Reset counter if button is not pressed within 2 seconds
