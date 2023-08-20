@@ -14,6 +14,7 @@ body {
   display: flex;
   align-items: center;
 }
+
 .taskbar .startmenu {
   color: #fff;
   font-family: Arial, sans-serif;
@@ -22,9 +23,11 @@ body {
   line-height: 40px;
   cursor: pointer;
 }
+
 .taskbar .startmenu:hover {
- background-color: #5b65d0;
+  background-color: #5b65d0;
 }
+
 .taskbar .application {
   color: #fff;
   background-color: #6b76d1;
@@ -34,58 +37,58 @@ body {
   line-height: 40px;
   cursor: pointer;
 }
+
 .taskbar .application:hover {
- background-color: #5b65d0;
+  background-color: #5b65d0;
 }
 
 /* Locations and such things */
 .myavatar {
   display: inline-block;
   position: absolute;
-  
-
-
   background-image: url('https://Dragomy.github.io/assets/MyAvatar(Dragomy).jpg');
   background-repeat: no-repeat;
   background-size: contain;
-  
   width: 290px;
   height: 315px;
   background-color: #000000;
   border: 3px solid #6b76d1;
-  box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.75);
   margin: 0 auto;
 }
+
 .aboutme {
   display: inline-block;
   position: absolute;
-  
+
   top: 40%;
   right: 60%;
-  
+
   width: 500px;
   height: 300px;
   background-color: #efedde;
   border: 3px solid #6b76d1;
-  box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.75);
   overflow: hidden;
   margin: 0 auto;
 }
+
 .findme {
   display: inline-block;
   position: fixed;
-  
+
   top: 5%;
   right: 10%;
-  
+
   width: 200px;
   height: 220px;
   background-color: #efedde;
   border: 3px solid #6b76d1;
-  box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.75);
   overflow: hidden;
   margin: 0 auto;
 }
+
 .terminal {
   display: inline-block;
   position: fixed;
@@ -95,16 +98,17 @@ body {
   height: 320px;
   background-color: #000000;
   border: 3px solid #6b76d1;
-  box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.75);
   overflow: hidden;
   margin: 0 auto;
   font-family: 'Courier New', Courier, monospace;
   font-size: 14px;
- color: white;
-  
- 
-  
+  color: white;
+
+
+
 }
+
 .ClickMeWindow {
   display: inline-block;
   position: absolute;
@@ -114,13 +118,13 @@ body {
   height: 300px;
   background-color: #efedde;
   border: 3px solid #6b76d1;
-  box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.75);
   overflow: hidden;
   margin: 0 auto;
 }
 
 /* ClickMe Button */
-.button_DCMIS{
+.button_DCMIS {
   position: absolute;
   top: 65%;
   left: 30%;
@@ -137,6 +141,7 @@ body {
   border-radius: 50%;
   box-shadow: 0 9px #999;
 }
+
 .button_DCMIS:active {
   background-color: #e00;
   box-shadow: 0 5px #666;
@@ -149,10 +154,12 @@ body {
   overflow: auto;
   margin-bottom: 10px;
 }
+
 .terminal-input {
   display: flex;
   align-items: center;
 }
+
 .terminal-prompt {
   margin-right: 5px;
 }
@@ -168,15 +175,18 @@ body {
   padding: 0 6px;
   line-height: 30px;
 }
-.icon-Image{
+
+.icon-Image {
   width: 15px;
   height: 15px;
 }
+
 .window-buttons {
   position: absolute;
   top: 0;
   right: 0;
 }
+
 .window-buttons button {
   display: inline-block;
   width: 30px;
@@ -188,15 +198,7 @@ body {
   background-repeat: no-repeat;
   background-position: center center;
 }
-.window-buttons .close {
-  background-image: url('https://img.icons8.com/windows/32/000000/close-window.png');
-}
-.window-buttons .maximize {
-  background-image: url('https://img.icons8.com/windows/32/000000/maximize-window.png');
-}
-.window-buttons .minimize {
-  background-image: url('https://img.icons8.com/windows/32/000000/minimize-window.png');
-}
+
 .window-content {
   position: relative;
   width: 100%;
@@ -204,9 +206,28 @@ body {
   overflow: auto;
   padding: 16px;
 }
+
 .win {
   font-family: "Segoe UI", Tahoma, sans-serif;
-   padding: 9px;
+  padding: 9px;
+}
+
+.window-buttons {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.window-buttons .close {
+  background-image: url('https://Dragomy.github.io/assets/CloseButton.png');
+}
+
+.window-buttons .maximize {
+  background-image: url('https://Dragomy.github.io/assets/MaximizeButton.png');
+}
+
+.window-buttons .minimize {
+  background-image: url('https://Dragomy.github.io/assets/MinimizeButton.png');
 }
 
 /* Curriculum Vitae */
@@ -217,10 +238,11 @@ body {
   height: 750px;
   background-color: #efedde;
   border: 3px solid #6b76d1;
-  box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.75);
   overflow: hidden;
   margin: 0 auto;
 }
+
 .wp-window-header {
   position: relative;
   height: 30px;
@@ -231,114 +253,100 @@ body {
   padding: 0 6px;
   line-height: 30px;
 }
-.icon-Image{
+
+.icon-Image {
   width: 15px;
   height: 15px;
 }
-.window-buttons {
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-.window-buttons button {
-  display: inline-block;
-  width: 30px;
-  height: 30px;
-  background-color: transparent;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-.window-buttons .close {
-  background-image: url('https://img.icons8.com/windows/32/000000/close-window.png');
-}
-.window-buttons .maximize {
-  background-image: url('https://img.icons8.com/windows/32/000000/maximize-window.png');
-}
-.window-buttons .minimize {
-  background-image: url('https://img.icons8.com/windows/32/000000/minimize-window.png');
-}
+
 .wp-window-content {
   position: relative;
   width: 100%;
   height: calc(100% - 30px);
   overflow: auto;
-  
+
 }
+
 .wp-helpbar {
   background-color: #ece9d8;
   width: 894px;
   height: 20px;
   border: 2px solid #cccac1;
-  box-shadow: 0px 0px 1px 1px rgba(255,255,255,0.75);
+  box-shadow: 0px 0px 1px 1px rgba(255, 255, 255, 0.75);
   margin: 0 auto;
 }
+
 .wp-toolbar {
   background-color: #ece9d8;
   width: 894px;
   height: 25px;
   border: 2px solid #cccac1;
-  box-shadow: 0px 0px 1px 1px rgba(255,255,255,0.75);
+  box-shadow: 0px 0px 1px 1px rgba(255, 255, 255, 0.75);
   margin: 0 auto;
 }
+
 .wp-texttools {
   background-color: #ece9d8;
   width: 894px;
   height: 25px;
   border: 2px solid #cccac1;
-  box-shadow: 0px 0px 1px 1px rgba(255,255,255,0.75);
+  box-shadow: 0px 0px 1px 1px rgba(255, 255, 255, 0.75);
   margin: 0 auto;
   display: flex;
 }
+
 .wp-font {
   position: relative;
   background-color: #fff;
   width: 100px;
   height: 18px;
   border: 2px solid #9bb1c2;
-  box-shadow: 0px 0px 1px 1px rgba(255,255,255,0.75);
+  box-shadow: 0px 0px 1px 1px rgba(255, 255, 255, 0.75);
   margin: 0 auto;
   margin-left: 5px;
 }
+
 .wp-scale {
   position: absolute;
   background-color: #fff;
   width: 60px;
   height: 18px;
   border: 2px solid #9bb1c2;
-  box-shadow: 0px 0px 1px 1px rgba(255,255,255,0.75);
+  box-shadow: 0px 0px 1px 1px rgba(255, 255, 255, 0.75);
   margin-left: 130px;
 }
+
 .wp-style {
   position: absolute;
   background-color: #fff;
   width: 80px;
   height: 18px;
   border: 2px solid #9bb1c2;
-  box-shadow: 0px 0px 1px 1px rgba(255,255,255,0.75);
+  box-shadow: 0px 0px 1px 1px rgba(255, 255, 255, 0.75);
   margin: 0 auto;
   margin-left: 214px;
 }
+
 .wp-innersc {
   position: absolute;
   background-color: #fff;
-  width: 895px ;
+  width: 895px;
   height: 18px;
   border: 2px solid #000;
-  box-shadow: 0px 0px 1px 1px rgba(255,255,255,0.75);
+  box-shadow: 0px 0px 1px 1px rgba(255, 255, 255, 0.75);
   margin: 0 auto;
   overflow: hidden;
 }
+
 .wp-paper {
   background-color: #fff;
   width: 885px;
   height: 1160px;
   border: 2px solid #cccac1;
-  box-shadow: 0px 0px 1px 1px rgba(255,255,255,0.75);
+  box-shadow: 0px 0px 1px 1px rgba(255, 255, 255, 0.75);
   margin: 0 auto;
 }
+
 .wp-text {
   margin-right: 10px;
 }
