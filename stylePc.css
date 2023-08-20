@@ -1,7 +1,9 @@
 body {
-  background-color: #9b95d0;
+  background-image: url('https://Dragomy.github.io/assets/DesktopBg.png');
+  background-size: cover; /* or "contain" or other values */
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* or "scroll" */
 }
-
 
 /* Menue Styles */
 .taskbar {
@@ -210,12 +212,6 @@ body {
 .win {
   font-family: "Segoe UI", Tahoma, sans-serif;
   padding: 9px;
-}
-
-.window-buttons {
-  position: absolute;
-  top: 0;
-  right: 0;
 }
 
 .window-buttons .close {
