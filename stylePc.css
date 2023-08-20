@@ -42,6 +42,13 @@ body {
 .myavatar {
   display: inline-block;
   position: absolute;
+  
+
+
+  background-image: url('https://Dragomy.github.io/assets/MyAvatar(Dragomy).jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  
   width: 290px;
   height: 315px;
   background-color: #000000;
