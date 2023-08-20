@@ -1,8 +1,8 @@
 body {
   background-image: url('https://Dragomy.github.io/assets/DesktopBg.png');
-  background-size: cover; /* or "contain" or other values */
-    background-repeat: no-repeat;
-    background-attachment: fixed; /* or "scroll" */
+  background-size: cover; 
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
 }
 
 /* Menue Styles */
