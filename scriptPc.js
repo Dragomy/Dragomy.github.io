@@ -71,14 +71,15 @@ if (counter < 2) {
      document.getElementById("counter").innerHTML = "Boogeyman:"+ counter;  
      document.getElementById("ClickMeWindow").style.backgroundColor = '#cccccc';
      document.getElementById("ClickMeWindow").style.color = '#333333';
-} else if (counter == 30) {
+} else if (counter == 50) {
      document.getElementById("counter").innerHTML = "Grim Reaper:"+ counter;  
      document.getElementById("ClickMeWindow").style.backgroundColor = '#dddddd';
      document.getElementById("ClickMeWindow").style.color = '#222222';
-} else if (counter == 30) {
+} else if (counter == 100) {
      document.getElementById("counter").innerHTML = "Demon:"+ counter;  
      document.getElementById("ClickMeWindow").style.backgroundColor = '#eeeeee';
      document.getElementById("ClickMeWindow").style.color = '#111111';
+     window.location.href = "https://dragomy.github.io/bluescreen.html";
 }
 
   // Reset counter if button is not pressed within 2 seconds
