@@ -1,0 +1,31 @@
+/*Special Styles*/
+.button_DCMIS{
+    position: relative;
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 96px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 9px #999;
+  }
+  .button_DCMIS:active {
+    background-color: #e00;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+  
+  #b1{
+    position:absolute;
+    left: 0%;
+     background-color: #f00;
+  }
+  #b2{
+    position:absolute;
+    right: 0%;
+     background-color: #00f;
+  }
