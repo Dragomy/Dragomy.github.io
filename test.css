@@ -1,0 +1,104 @@
+body{
+    background-color: black;
+  }
+  
+  /*Color1:purple; #765898*/
+  /*Color2:green; #52d053*/
+  
+  /*[===Text Box Styles===]*/
+  .site-border {
+    display: flex;
+    justify-content: space-between;
+    
+    height: 97vh;
+    width: auto;
+    
+    background-color:rgba(0, 0, 0, 0.0);
+    color: white;
+    border-style: solid;  
+  }
+  
+  .welcome {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 97%;
+    width: 10%;
+    margin: 8px;
+    background-color: rgba(0, 0, 0, 0.0);
+    color: white;
+    border-style: solid;
+  }
+  
+  .welcome-text {
+    font-size: 200px;
+    transform: rotate(270deg); 
+    transform-origin: center;
+    user-select: none;
+    text-shadow: 2px -4px gray;
+  }
+  
+  .coolString {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    
+    position: absolute;
+    left:11%;
+    
+    height: 10%;
+    width: 35%;
+    margin: 8px;
+    
+    background-color: rgba(0, 0, 0, 0.0);
+    color: white;
+    border-style: solid;
+  }
+  
+  #dateParagraph{
+    font-size: 80px;
+    transform-origin: center;
+    user-select: none;
+    text-shadow: 2px -4px gray;
+  }
+  
+  .WaIBox { 
+    justify-content: center; 
+    height: 50%;
+    width: 22%;
+    margin: 8px;
+    background-color: rgba(0, 0, 0, 0.0);
+    color: white;
+    border-style: solid;
+  }
+  
+  .WaI{ 
+    transform-origin: center;
+    user-select: none;
+    text-shadow: 1.2px -1.2px gray;
+    margin:10px;
+  }
+  
+  .styled-button {
+    /*I like Comic Sans #freeComicSans*/
+    font-family: 'Comic Sans MS';
+    
+    width:30px;
+    height:30px;
+    font-size: 30px; 
+    text-decoration: underline; 
+    border: none;
+    background-color: black; 
+    color: white;
+    cursor: pointer;
+  }
+  
+  .styled-button:hover {
+    color: #765898; 
+  }
+  .styled-button:active {
+    color: #52d053; 
+  }
+  
+  /*[===Window Styles===]*/
+  

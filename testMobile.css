@@ -1,0 +1,19 @@
+body{
+    background-color: black;
+  }
+  
+  /*Color1:purple; #765898*/
+  /*Color2:green; #52d053*/
+  
+  /*[===Text Box Styles===]*/
+  .site-border {
+    display: flex;
+    justify-content: space-between;
+    
+    height: 97vh;
+    width: auto;
+    
+    background-color:rgba(0, 0, 0, 0.0);
+    color: white;
+    border-style: solid;  
+  }
