@@ -158,6 +158,19 @@ body {
   margin: 0 auto;
 }
 
+/*[===Window Styles Test===]*/
+.myavatar:hover {
+  border: 3px solid #52d053;
+}
+
+.findme:hover {
+  border: 3px solid #52d053;
+}
+
+.hobbys:hover {
+  border: 3px solid #52d053;
+}
+
 /* Windows XP Window Styles */
 .window-header {
   position: relative;
