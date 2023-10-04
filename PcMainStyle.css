@@ -64,8 +64,17 @@ body {
       0 0 5px 1px #fff,  /* inner white */
       0 0 10px 2px #f0f, /* middle magenta */
       0 0 15px 3px #0ff; /* outer cyan */
+      
   }
-  
+
+  .aboutmeimg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    height: 100% ;
+  }
+
   .WaI{ 
     transform-origin: center;
     user-select: none;
