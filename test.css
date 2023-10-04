@@ -1,232 +1,321 @@
 body {
-  background-color: black;
-}
-
-/*Color1:purple; #765898*/
-/*Color2:green; #52d053*/
-
-/*[===Text Box Styles===]*/
-.site-border {
-  display: flex;
-  justify-content: space-between;
-
-  height: 97vh;
-  width: auto;
-
-  background-color: rgba(0, 0, 0, 0.0);
-  color: white;
-  border-style: solid;
-}
-
-.welcome {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 97%;
-  width: 10%;
-  margin: 8px;
-  background-color: rgba(0, 0, 0, 0.0);
-  color: white;
-  border-style: solid;
-}
-
-.welcome-text {
-  font-size: 200px;
-  transform: rotate(270deg);
-  transform-origin: center;
-  user-select: none;
-  text-shadow: 2px -4px gray;
-}
-
-.coolString {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  position: absolute;
-  left: 11%;
-
-  height: 10%;
-  width: 35%;
-  margin: 8px;
-
-  background-color: rgba(0, 0, 0, 0.0);
-  color: white;
-  border-style: solid;
-}
-
-#dateParagraph {
-  font-size: 80px;
-  transform-origin: center;
-  user-select: none;
-  text-shadow: 2px -4px gray;
-}
-
-.WaIBox {
-  position: absolute;
-  right: 10px;
-  bottom: 20px;
-  justify-content: center;
-  height: 50%;
-  width: 22%;
-  margin: 8px;
-  background-color: rgba(0, 0, 0, 0.0);
-  color: white;
-  border-style: solid;
-}
-
-.WaI {
-  transform-origin: center;
-  user-select: none;
-  text-shadow: 1.2px -1.2px gray;
-  margin: 10px;
-}
-
-.styled-button {
-  /*I like Comic Sans #freeComicSans*/
-  font-family: 'Comic Sans MS';
-
-  width: 250px;
-  height: 30px;
-  font-size: 30px;
-  text-decoration: underline;
-  border: none;
-  background-color: black;
-  color: white;
-  cursor: pointer;
-}
-
-.styled-button:hover {
-  color: #765898;
-}
-
-.styled-button:active {
-  color: #52d053;
-}
-
-/*[===Window Styles===]*/
-
-.myavatar {
-  position: absolute;
-  right: 20px;
-  top: 20px;
-
-  display: inline-block;
-  background-image: url('https://Dragomy.github.io/assets/MyAvatar(Dragomy).jpg');
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: 22%;
-  height: 42vh;
-  background-color: #000000;
-  border: 3px solid #765898;
-  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.75);
-  margin: 0 auto;
-}
-
-.findme {
-  position: absolute;
-  left: 11.4%;
-  top: 13%;
-
-  display: inline-block;
-
-
-  width: 10%;
-  height: 20%;
-
-  background-color: #efedde;
-  border: 3px solid #765898;
-  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.75);
+  margin: 0;
   overflow: hidden;
-  margin: 0 auto;
-}
-
-.hobbys {
-  position: absolute;
-  left: 23%;
-  top: 13%;
-
-  display: inline-block;
-
-  width: 10%;
-  height: 20%;
-
-  background-color: #efedde;
-  border: 3px solid #765898;
-  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.75);
-  overflow: hidden;
-  margin: 0 auto;
-}
-
-/*[===Window Styles Test===]*/
-.myavatar:hover {
-  border: 3px solid #52d053;
-}
-
-.findme:hover {
-  border: 3px solid #52d053;
-}
-
-.hobbys:hover {
-  border: 3px solid #52d053;
-}
-
-/* Windows XP Window Styles */
-.window-header {
-  position: relative;
-  height: 30px;
-  background-color: #765898;
-  color: #fff;
-  font-size: 14px;
-  font-weight: bold;
-  padding: 0 6px;
-  line-height: 30px;
-}
-
-.icon-Image {
-  width: 15px;
-  height: 15px;
-}
-
-.window-buttons {
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-
-.window-buttons button {
-  display: inline-block;
-  width: 30px;
-  height: 30px;
-  background-color: transparent;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-
-.window-content {
-  position: relative;
-  width: 100%;
-  height: calc(100% - 30px);
-  overflow: auto;
-  padding: 16px;
-}
-
-.win {
-  font-family: "Segoe UI", Tahoma, sans-serif;
-  padding: 9px;
-}
-
-.window-buttons .close {
-  background-image: url('https://Dragomy.github.io/assets/CloseButton.png');
-}
-
-.window-buttons .maximize {
-  background-image: url('https://Dragomy.github.io/assets/MaximizeButton.png');
-}
-
-.window-buttons .minimize {
-  background-image: url('https://Dragomy.github.io/assets/MinimizeButton.png');
-}
+  background-color:black;
+  color:white;
+  }
+  
+  .rectangle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    box-shadow:
+      0 0 5px 1px #fff,  /* inner white */
+      0 0 10px 2px #f0f, /* middle magenta */
+      0 0 15px 3px #0ff; /* outer cyan */
+    border-style: solid;
+  }
+  
+  #rectangle {
+    width: 90vw;
+    height: 90vh;
+  }
+  #rectangle1 {
+    width: 80vw;
+    height: 80vh;
+  }
+  #rectangle2 {
+    width: 70vw;
+    height: 70vh;
+  }
+  #rectangle3 {
+    width: 60vw;
+    height: 60vh;
+  }
+  #rectangle4 {
+    width: 50vw;
+    height: 50vh;
+  }
+  #rectangle5 {
+    width: 40vw;
+    height: 40vh;
+    background-color:black;
+  }
+  
+  #lines{
+    filter: drop-shadow(
+      0px 2px 5px #f0f
+    );
+  }
+  
+  #about-me{
+    position: absolute;
+    bottom: 2%;
+    right: 2%;
+    color: white;
+    width: 30vw;
+    height: 50vh;
+    border-style: solid;
+    background-color:black;
+    overflow: hidden;
+    box-shadow:
+      0 0 5px 1px #fff,  /* inner white */
+      0 0 10px 2px #f0f, /* middle magenta */
+      0 0 15px 3px #0ff; /* outer cyan */
+  }
+  
+  .WaI{ 
+    transform-origin: center;
+    user-select: none;
+    text-shadow: 1.2px -1.2px gray;
+    margin:10px;
+  }
+  
+  .styled-button {
+    /*I like Comic Sans #freeComicSans*/
+    font-family: 'Comic Sans MS';
+    
+    width:100%;
+    height:auto;
+    font-size: 30px; 
+    text-decoration: underline; 
+    border: none;
+    background-color: black; 
+    color: white;
+    cursor: pointer;
+  }
+  .styled-button:hover {
+    color: #765898; 
+  }
+  .styled-button:active {
+    color: #0ff; 
+  }
+  
+  #welcome{
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    width: 8vw;
+    height: 95vh;
+    color: white;
+    background-color:black;
+    box-shadow:
+      0 0 5px 1px #fff,  /* inner white */
+      0 0 10px 2px #f0f, /* middle magenta */
+      0 0 15px 3px #0ff; /* outer cyan */
+    border-style: solid;
+    overflow:hidden;
+  }
+  
+  #welcome-text{
+    position: relative;
+    bottom:-60vh;
+    rotate:270deg;
+    color:white;
+    font-size: 10vw; 
+  }
+  
+  /* Specific Style */
+  .hobbies {
+    display: inline-block;
+    position: absolute;
+    left: 13vw;
+    top: 3vh;
+    width: 10vw;
+    height: 20vh;
+    background-color: #efedde;
+    border: 3px solid #765898;
+    box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.75);
+    overflow: hidden;
+    margin: 0 auto;
+  }
+  .myAvatar {
+    display: inline-block;
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    width: 30vw;
+    height: 40vh;
+    background-color: black;
+    border: 3px solid #765898;
+    box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.75);
+    overflow: hidden;
+    margin: 0 auto;
+  }
+  /* All window styles */
+  .window-header {
+    position: relative;
+    height: 30px;
+    background-color: #765898;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 0 6px;
+    line-height: 30px;
+  }
+  .icon-Image{
+    width: 15px;
+    height: 15px;
+  }
+  .window-buttons {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .window-buttons button {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  .window-buttons .close {
+    background-image: url('https://img.icons8.com/windows/32/000000/close-window.png');
+  }
+  .window-buttons .maximize {
+    background-image: url('https://img.icons8.com/windows/32/000000/maximize-window.png');
+  }
+  .window-buttons .minimize {
+    background-image: url('https://img.icons8.com/windows/32/000000/minimize-window.png');
+  }
+  .window-content {
+    position: relative;
+    width: 100%;
+    height: calc(100% - 30px);
+    overflow: auto;
+    padding: 16px;
+  }
+  .win {
+    font-family: "Segoe UI", Tahoma, sans-serif;
+     padding: 9px;
+  }
+  
+  /* WordPad - CurriculumVitae */
+  .wp-window {
+    display: inline-block;
+    position: relative;
+    width: 900px;
+    height: 750px;
+    top: 3vh;
+    left: 5vw;
+    background-color: #efedde;
+    border: 3px solid #765898;
+    box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.75);
+    overflow: hidden;
+    margin: 0 auto;
+    color:black;
+  }
+  .wp-window-header {
+    position: relative;
+    height: 30px;
+    background-color: #765898;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 0 6px;
+    line-height: 30px;
+  }
+  .wp-window-content {
+    position: relative;
+    width: 100%;
+    height: calc(100% - 30px);
+    overflow: auto;
+    
+  }
+  .wp-helpbar {
+    background-color: #ece9d8;
+    width: 894px;
+    height: 20px;
+    border: 2px solid #cccac1;
+    box-shadow: 0px 0px 1px 1px rgba(255,255,255,0.75);
+    margin: 0 auto;
+  }
+  .wp-toolbar {
+    background-color: #ece9d8;
+    width: 894px;
+    height: 25px;
+    border: 2px solid #cccac1;
+    box-shadow: 0px 0px 1px 1px rgba(255,255,255,0.75);
+    margin: 0 auto;
+  }
+  .wp-texttools {
+    background-color: #ece9d8;
+    width: 894px;
+    height: 25px;
+    border: 2px solid #cccac1;
+    box-shadow: 0px 0px 1px 1px rgba(255,255,255,0.75);
+    margin: 0 auto;
+    display: flex;
+  }
+  .wp-font {
+    position: relative;
+    background-color: #fff;
+    width: 100px;
+    height: 18px;
+    border: 2px solid #9bb1c2;
+    box-shadow: 0px 0px 1px 1px rgba(255,255,255,0.75);
+    margin: 0 auto;
+    margin-left: 5px;
+  }
+  .wp-scale {
+    position: absolute;
+    background-color: #fff;
+    width: 60px;
+    height: 18px;
+    border: 2px solid #9bb1c2;
+    box-shadow: 0px 0px 1px 1px rgba(255,255,255,0.75);
+    margin-left: 130px;
+  }
+  .wp-style {
+    position: absolute;
+    background-color: #fff;
+    width: 80px;
+    height: 18px;
+    border: 2px solid #9bb1c2;
+    box-shadow: 0px 0px 1px 1px rgba(255,255,255,0.75);
+    margin: 0 auto;
+    margin-left: 214px;
+  }
+  .wp-innersc {
+    position: absolute;
+    background-color: #fff;
+    width: 895px ;
+    height: 18px;
+    border: 2px solid #000;
+    box-shadow: 0px 0px 1px 1px rgba(255,255,255,0.75);
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  .wp-paper {
+    background-color: #fff;
+    width: 885px;
+    height: 170%;
+    border: 2px solid #cccac1;
+    box-shadow: 0px 0px 1px 1px rgba(255,255,255,0.75);
+    margin: 0 auto;
+  }
+  .wp-text {
+    margin-right: 10px;
+  }
+  /* In window styles */
+  .hobby-buttons{
+    position: relative;
+    left:0vw;
+    
+    font-family: 'Comic Sans MS';
+    width:100%;
+    height:auto;
+    font-size: 2vh; 
+    text-decoration: underline; 
+    border: none;
+    background-color: transparent; 
+    color: black;
+    cursor: pointer;
+  }
+  

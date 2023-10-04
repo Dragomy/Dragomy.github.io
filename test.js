@@ -1,13 +1,17 @@
-/*coolString function*/
-const currentDate = new Date();
-
-const year = currentDate.getFullYear();
-const month = String(currentDate.getMonth() + 1).padStart(2, '0');
-const day = String(currentDate.getDate()).padStart(2, '0');
-
-const weekAtDay = Math.floor(currentDate.getDate() / 7);
-const identifier = weekAtDay % 2 === 0 ? 'A//' : 'B//';
-const formattedDate = `${identifier}${year}/${month}/${day}`;
-document.getElementById('dateParagraph').textContent = formattedDate;
-
-/*!coolString function*/
+//Function used to toggle the Curriculum Vitae Window
+function toggleDisplay(elementId) {
+    const element = document.getElementById(elementId);
+    element.style.display = (element.style.display === 'none') ? 'block' : 'none';
+  }
+  
+  function addButtonClickListener(buttonId, divId) {
+    const button = document.getElementById(buttonId);
+    const div = document.getElementById(divId);
+    button.addEventListener('click', function() {
+      toggleDisplay(divId);
+    });
+  }
+  
+  addButtonClickListener('CurViButton', 'CurriculumVitae');
+  addButtonClickListener('CurViClose', 'CurriculumVitae');
+  
