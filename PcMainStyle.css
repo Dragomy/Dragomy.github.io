@@ -314,17 +314,11 @@ body {
   }
   /* In window styles */
   .hobby-buttons{
-    position: relative;
-    left:0vw;
-    
     font-family: 'Comic Sans MS';
-    width:100%;
-    height:auto;
-    font-size: 2vh; 
-    text-decoration: underline; 
+    background-color: transparent;
     border: none;
-    background-color: transparent; 
-    color: black;
+    font-size: 2vh; 
+     color: black;
     cursor: pointer;
   }
   
