@@ -14,4 +14,5 @@ function toggleDisplay(elementId) {
   
   addButtonClickListener('CurViButton', 'CurriculumVitae');
   addButtonClickListener('CurViClose', 'CurriculumVitae');
+ 
   
