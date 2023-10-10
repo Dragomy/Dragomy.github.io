@@ -49,19 +49,16 @@ body {
   display: flex;
   justify-content: center;
 
-  top: 1vh;
-  left: 1vw;
-  width: 98vw;
-  height: 50vh;
+  top: 3vh;
+  left: 3vw;
+  width: 94vw;
+  height: 30vh;
 
   background-color: black;
   box-shadow:
     0 0 5px 1px #fff,
-    /* inner white */
     0 0 10px 2px #f0f,
-    /* middle magenta */
     0 0 15px 3px #0ff;
-  /* outer cyan */
   border-style: solid;
 }
 
@@ -72,11 +69,23 @@ body {
 
 #textdiv {
   position: absolute;
-  display: flex;
+
   justify-content: center;
-  bottom: 1vh;
-  background-color:black;
+
+  bottom: 7vh;
+  left: 21vw;
+  width: 58vw;
+  height: 50vh;
+
+  background-color: black;
+  box-shadow:
+    0 0 5px 1px #fff,
+    0 0 10px 2px #f0f,
+    0 0 15px 3px #0ff;
   border-style: solid;
  
 }
 
+#space{
+  font-size: 100%;
+}
