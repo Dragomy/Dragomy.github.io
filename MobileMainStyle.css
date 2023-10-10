@@ -43,23 +43,25 @@ body {
 
 /*Foreground under here :D*/
 
-#imgdiv{
-  position:absolute;
+#imgdiv {
+  position: absolute;
   top: 1vh;
   left: 1vw;
   width: 98vw;
-  height: auto;
-  background-color:black;
-  box-shadow:
-  0 0 5px 1px #fff,
-  /* inner white */
-  0 0 10px 2px #f0f,
-  /* middle magenta */
-  0 0 15px 3px #0ff;
-/* outer cyan */
-border-style: solid;
-}
-.aboutmeimg{
-  
+  height: 40vh;
+  background-color: black;
 
+  box-shadow:
+    0 0 5px 1px #fff,
+    /* inner white */
+    0 0 10px 2px #f0f,
+    /* middle magenta */
+    0 0 15px 3px #0ff;
+  /* outer cyan */
+  border-style: solid;
+}
+
+.aboutmeimg {
+  height: 100%;
+  width: auto;
 }
