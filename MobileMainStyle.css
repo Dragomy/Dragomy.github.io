@@ -69,3 +69,12 @@ body {
   height: 100%;
   width: auto;
 }
+
+#textdiv {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  bottom: 1vh;
+  background-color:black;
+  border-style: solid;
+}
