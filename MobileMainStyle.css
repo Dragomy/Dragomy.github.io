@@ -45,9 +45,11 @@ body {
 
 #imgdiv{
   position:absolute;
+  top: 1vh;
+  left: 1vw;
+  width: 98vw;
+  height: auto;
   background-color:black;
-}
-.aboutmeimg{
   box-shadow:
   0 0 5px 1px #fff,
   /* inner white */
@@ -56,4 +58,8 @@ body {
   0 0 15px 3px #0ff;
 /* outer cyan */
 border-style: solid;
+}
+.aboutmeimg{
+  
+
 }
