@@ -45,6 +45,8 @@ body {
 
 #imgdiv {
   position: absolute;
+  display: flex;
+  justify-content: center;
   top: 1vh;
   left: 1vw;
   width: 98vw;
@@ -62,6 +64,7 @@ body {
 }
 
 .aboutmeimg {
+ 
   height: 100%;
   width: auto;
 }
