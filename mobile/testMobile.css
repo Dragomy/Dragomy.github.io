@@ -1,19 +1,91 @@
-body{
-    background-color: black;
-  }
-  
-  /*Color1:purple; #765898*/
-  /*Color2:green; #52d053*/
-  
-  /*[===Text Box Styles===]*/
-  .site-border {
-    display: flex;
-    justify-content: space-between;
-    
-    height: 97vh;
-    width: auto;
-    
-    background-color:rgba(0, 0, 0, 0.0);
-    color: white;
-    border-style: solid;  
-  }
+body {
+  margin: 0;
+  overflow: hidden;
+  background-color: black;
+  color: white;
+}
+
+.rectangle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  box-shadow:
+    0 0 5px 1px #fff,
+    /* inner white */
+    0 0 10px 2px #f0f,
+    /* middle magenta */
+    0 0 15px 3px #0ff;
+  /* outer cyan */
+  border-style: solid;
+}
+
+#rectangle {
+  width: 80vw;
+  height: 80vh;
+}
+
+#rectangle1 {
+  width: 60vw;
+  height: 60vh;
+}
+
+#rectangle2 {
+  width: 40vw;
+  height: 40vh;
+  background-color: black;
+}
+
+#lines {
+  filter: drop-shadow(0px 2px 5px #f0f);
+}
+
+/*Foreground under here :D*/
+
+#imgdiv {
+  position: absolute;
+
+  display: flex;
+  justify-content: center;
+
+  top: 3vh;
+  left: 3vw;
+  width: 94vw;
+  height: 30vh;
+
+  background-color: black;
+  box-shadow:
+    0 0 5px 1px #fff,
+    0 0 10px 2px #f0f,
+    0 0 15px 3px #0ff;
+  border-style: solid;
+}
+
+.aboutmeimg {
+  height: 100%;
+  width: auto;
+}
+
+#textdiv {
+  position: absolute;
+
+  justify-content: center;
+
+  bottom: 7vh;
+  left: 21vw;
+  width: 58vw;
+  height: 50vh;
+
+  background-color: black;
+  box-shadow:
+    0 0 5px 1px #fff,
+    0 0 10px 2px #f0f,
+    0 0 15px 3px #0ff;
+  border-style: solid;
+
+}
+
+#space {
+  font-size: 100%;
+}
