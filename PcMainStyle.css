@@ -1,23 +1,67 @@
-body {
-  margin: 0;
-  overflow: hidden;
+body{
+  background-color: black;
+}
+/*----------------------------*/
+.div_1994{
+  width: 99vw;
+  height: 102vh;
+  margin: -8px;
+  background-image: url("https://dragomy.github.io/assets/bg_img_1.png");
+  background-repeat: repeat;
   background-color: black;
   color: white;
+  text-align: center;
+}
+#welcome_text{
+  font-size: 8vh;
+  margin: 0;
+}
+.div_1991{
+  width: 99.6vw;
+  height: 99.5vh;
+  background-color: white;
+}
+/*----------------------------*/
+.old_button{
+   height: 3vh;
+  border: inset gray;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  cursor: pointer;
+}
+.old_button:hover{
+  border: inset purple;
 }
 
-.rectangle {
+#b1{
+  background: url('https://dragomy.github.io/assets/lined-paper.png');
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  text-shadow: 2px 2px white;
+}
+#b2{
+  width: 5vw;
+  display: inline-block;
+  background-image: url('https://dragomy.github.io/assets/GitHub_button.png'); 
+  background-size: cover;
+  background-position: center;
+}
+/*----------------------------*/
+.div_2023{
+  width: 99vw;
+  height: 102vh;
+  background-color: black;
+}
+
+.rectangle{
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
   box-shadow:
-    0 0 5px 1px #fff,
-    /* inner white */
-    0 0 10px 2px #f0f,
-    /* middle magenta */
-    0 0 15px 3px #0ff;
-  /* outer cyan */
+    0 0 5px 1px #fff,  /* inner white */
+    0 0 10px 2px #f0f, /* middle magenta */
+    0 0 15px 3px #0ff; /* outer cyan */
   border-style: solid;
 }
 
@@ -25,38 +69,35 @@ body {
   width: 90vw;
   height: 90vh;
 }
-
 #rectangle1 {
   width: 80vw;
   height: 80vh;
 }
-
 #rectangle2 {
   width: 70vw;
   height: 70vh;
 }
-
 #rectangle3 {
   width: 60vw;
   height: 60vh;
 }
-
 #rectangle4 {
   width: 50vw;
   height: 50vh;
 }
-
 #rectangle5 {
   width: 40vw;
   height: 40vh;
-  background-color: black;
+  background-color:black;
 }
 
-#lines {
-  filter: drop-shadow(0px 2px 5px #f0f);
+#lines{
+  filter: drop-shadow(
+    0px 2px 5px #f0f
+  );
 }
 
-#about-me {
+#about-me{
   position: absolute;
   bottom: 2%;
   right: 2%;
@@ -64,357 +105,100 @@ body {
   width: 30vw;
   height: 50vh;
   border-style: solid;
-  background-color: black;
+  background-color:black;
   overflow: hidden;
   box-shadow:
-    0 0 5px 1px #fff,
-    /* inner white */
-    0 0 10px 2px #f0f,
-    /* middle magenta */
-    0 0 15px 3px #0ff;
-  /* outer cyan */
-
-}
-
-.aboutmeimg {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: auto;
-  height: 100%;
-}
-
-.WaI {
-  transform-origin: center;
-  user-select: none;
-  text-shadow: 1.2px -1.2px gray;
-  margin: 10px;
+    0 0 5px 1px #fff,  /* inner white */
+    0 0 10px 2px #f0f, /* middle magenta */
+    0 0 15px 3px #0ff; /* outer cyan */
 }
 
 .styled-button {
   /*I like Comic Sans #freeComicSans*/
   font-family: 'Comic Sans MS';
-
-  width: 100%;
-  height: auto;
-  font-size: 30px;
-  text-decoration: underline;
+  
+  width:100%;
+  height:auto;
+  font-size: 30px; 
+  text-decoration: underline; 
   border: none;
-  background-color: black;
+  background-color: black; 
   color: white;
   cursor: pointer;
 }
-
 .styled-button:hover {
-  color: #765898;
-  font-size: 4vh;
+  color: #765898; 
 }
-
 .styled-button:active {
-  color: #0ff;
+  color: #0ff; 
 }
 
-#welcome {
+.WaI{ 
+  transform-origin: center;
+  user-select: none;
+  text-shadow: 1.2px -1.2px gray;
+  margin:10px;
+}
+
+#scrolle_down{
   position: absolute;
-  top: 2%;
-  left: 2%;
-  width: 8vw;
-  height: 95vh;
+  bottom: 4%;
+  left: 40%;
   color: white;
-  background-color: black;
-  box-shadow:
-    0 0 5px 1px #fff,
-    /* inner white */
-    0 0 10px 2px #f0f,
-    /* middle magenta */
-    0 0 15px 3px #0ff;
-  /* outer cyan */
   border-style: solid;
+  background-color:black;
   overflow: hidden;
-}
-
-#welcome-text {
-  position: relative;
-  bottom: -60vh;
-  rotate: 270deg;
-  color: white;
-  font-size: 10vw;
-}
-
-#welcome-text:hover {
-  font-family: 'Comic Sans MS';
-  color: #765898;
-  font-size: 9vw;
-}
-
-/* Specific Style */
-.hobbies {
-  display: inline-block;
-  position: absolute;
-  left: 13vw;
-  top: 3vh;
-  width: 10vw;
-  height: 20vh;
-  background-color: black;
-  border: 3px solid #765898;
-  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.75);
-  overflow: hidden;
-  margin: 0 auto;
-
   box-shadow:
-    0 0 5px 1px #fff,
-    /* inner white */
-    0 0 10px 2px #f0f,
-    /* middle magenta */
-    0 0 15px 3px #0ff;
-  /* outer cyan */
-}
-
-.myAvatar {
-  display: inline-block;
-  position: absolute;
-  top: 2%;
-  right: 2%;
-  width: 30vw;
-  height: 40vh;
-  background-color: black;
-  border: 3px solid #765898;
-  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.75);
-  overflow: hidden;
-  margin: 0 auto;
-
-  box-shadow:
-    0 0 5px 1px #fff,
-    /* inner white */
-    0 0 10px 2px #f0f,
-    /* middle magenta */
-    0 0 15px 3px #0ff;
-  /* outer cyan */
-}
-
-.findme {
-  font-family: 'Comic Sans MS';
-
-  display: inline-block;
-  position: absolute;
-  left: 25vw;
-  top: 3vh;
-  width: 10vw;
-  height: 20vh;
-  background-color: black;
-  border: 3px solid #765898;
-  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.75);
-  overflow: hidden;
-  margin: 0 auto;
-
-  box-shadow:
-    0 0 5px 1px #fff,
-    /* inner white */
-    0 0 10px 2px #f0f,
-    /* middle magenta */
-    0 0 15px 3px #0ff;
-  /* outer cyan */
-}
-
-/* All window styles */
-.window-header {
-  position: relative;
-  height: 30px;
-  background-color: #765898;
-  color: #fff;
-  font-size: 14px;
-  font-weight: bold;
-  padding: 0 6px;
-  line-height: 30px;
-}
-
-.icon-Image {
-  width: 15px;
-  height: 15px;
-}
-
-.window-buttons {
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-
-.window-buttons button {
-  display: inline-block;
-  width: 30px;
-  height: 30px;
-  background-color: transparent;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-
-.window-buttons .close {
-  background-image: url('https://Dragomy.github.io/assets/CloseButton.png');
-}
-
-.window-buttons .maximize {
-  background-image: url('https://Dragomy.github.io/assets/MaximizeButton.png');
-}
-
-.window-buttons .minimize {
-  background-image: url('https://Dragomy.github.io/assets/MinimizeButton.png');
-}
-
-.window-content {
-  position: relative;
-  width: 100%;
-  height: calc(100% - 30px);
-  overflow: auto;
-  padding: 16px;
-}
-
-.win {
-  font-family: "Segoe UI", Tahoma, sans-serif;
-  padding: 9px;
-}
-
-/* WordPad - CurriculumVitae */
-.wp-window {
-  display: inline-block;
-  position: relative;
-  width: 900px;
-  height: 750px;
-  top: 3vh;
-  left: 5vw;
-  background-color: #efedde;
-  border: 3px solid #765898;
-  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.75);
-  overflow: hidden;
-  margin: 0 auto;
-  color: black;
-
-  box-shadow:
-    0 0 5px 1px #fff,
-    /* inner white */
-    0 0 10px 2px #f0f,
-    /* middle magenta */
-    0 0 15px 3px #0ff;
-  /* outer cyan */
-}
-
-.wp-window-header {
-  position: relative;
-  height: 30px;
-  background-color: #765898;
-  color: #fff;
-  font-size: 14px;
-  font-weight: bold;
-  padding: 0 6px;
-  line-height: 30px;
-}
-
-.wp-window-content {
-  position: relative;
-  width: 100%;
-  height: calc(100% - 30px);
-  overflow: auto;
-
-}
-
-.wp-helpbar {
-  background-color: #ece9d8;
-  width: 894px;
-  height: 20px;
-  border: 2px solid #cccac1;
-  box-shadow: 0px 0px 1px 1px rgba(255, 255, 255, 0.75);
-  margin: 0 auto;
-}
-
-.wp-toolbar {
-  background-color: #ece9d8;
-  width: 894px;
-  height: 25px;
-  border: 2px solid #cccac1;
-  box-shadow: 0px 0px 1px 1px rgba(255, 255, 255, 0.75);
-  margin: 0 auto;
-}
-
-.wp-texttools {
-  background-color: #ece9d8;
-  width: 894px;
-  height: 25px;
-  border: 2px solid #cccac1;
-  box-shadow: 0px 0px 1px 1px rgba(255, 255, 255, 0.75);
-  margin: 0 auto;
-  display: flex;
-}
-
-.wp-font {
-  position: relative;
-  background-color: #fff;
-  width: 100px;
-  height: 18px;
-  border: 2px solid #9bb1c2;
-  box-shadow: 0px 0px 1px 1px rgba(255, 255, 255, 0.75);
-  margin: 0 auto;
-  margin-left: 5px;
-}
-
-.wp-scale {
-  position: absolute;
-  background-color: #fff;
-  width: 60px;
-  height: 18px;
-  border: 2px solid #9bb1c2;
-  box-shadow: 0px 0px 1px 1px rgba(255, 255, 255, 0.75);
-  margin-left: 130px;
-}
-
-.wp-style {
-  position: absolute;
-  background-color: #fff;
-  width: 80px;
-  height: 18px;
-  border: 2px solid #9bb1c2;
-  box-shadow: 0px 0px 1px 1px rgba(255, 255, 255, 0.75);
-  margin: 0 auto;
-  margin-left: 214px;
-}
-
-.wp-innersc {
-  position: absolute;
-  background-color: #fff;
-  width: 895px;
-  height: 18px;
-  border: 2px solid #000;
-  box-shadow: 0px 0px 1px 1px rgba(255, 255, 255, 0.75);
-  margin: 0 auto;
-  overflow: hidden;
-}
-
-.wp-paper {
-  background-color: #fff;
-  width: 885px;
-  height: 170%;
-  border: 2px solid #cccac1;
-  box-shadow: 0px 0px 1px 1px rgba(255, 255, 255, 0.75);
-  margin: 0 auto;
-}
-
-.wp-text {
-  margin-right: 10px;
-}
-
-/* In window styles */
-.hobby-buttons {
-  font-family: 'Comic Sans MS';
-  background-color: transparent;
-  border: none;
+    0 0 5px 1px #fff,  /* inner white */
+    0 0 10px 2px #f0f, /* middle magenta */
+    0 0 15px 3px #0ff; /* outer cyan */
   font-size: 2vh;
-  color: white;
-  cursor: pointer;
 }
 
-.hobby-buttons:hover {
+#avatar{
+  position: absolute;
+  top: 5vh;
+  right: 5vw;
+  color: white;
+  border-style: solid;
+  background-color:black;
+  overflow: hidden;
+  box-shadow:
+    0 0 5px 1px #fff,  /* inner white */
+    0 0 10px 2px #f0f, /* middle magenta */
+    0 0 15px 3px #0ff; /* outer cyan */
+}
 
+#welcome{
+  position: absolute;
+  top: 1%;
+  left: 1%;
+  color: white;
+  border-style: solid;
+  background-color:black;
+  overflow: hidden;
+  box-shadow:
+    0 0 5px 1px #fff,  /* inner white */
+    0 0 10px 2px #f0f, /* middle magenta */
+    0 0 15px 3px #0ff; /* outer cyan */
   font-size: 3vh;
+}
 
+#contact{
+  position: absolute;
+  top: 13%;
+  left: 1%;
+  color: white;
+  border-style: solid;
+  background-color:black;
+  overflow: hidden;
+  box-shadow:
+    0 0 5px 1px #fff,  /* inner white */
+    0 0 10px 2px #f0f, /* middle magenta */
+    0 0 15px 3px #0ff; /* outer cyan */
+  font-size: 1.5vh;
+}
+
+#email-image{
+  height: 2vh;
 }
