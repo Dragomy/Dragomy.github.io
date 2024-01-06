@@ -32,7 +32,6 @@ body{
 .old_button:hover{
   border: inset purple;
 }
-
 #b1{
   background: url('https://dragomy.github.io/assets/lined-paper.png');
   font-family: "Comic Sans MS", "Comic Sans", cursive;
@@ -51,7 +50,6 @@ body{
   height: 102vh;
   background-color: black;
 }
-
 .rectangle{
   position: absolute;
   top: 50%;
@@ -64,7 +62,6 @@ body{
     0 0 15px 3px #0ff; /* outer cyan */
   border-style: solid;
 }
-
 #rectangle {
   width: 90vw;
   height: 90vh;
@@ -90,13 +87,11 @@ body{
   height: 40vh;
   background-color:black;
 }
-
 #lines{
   filter: drop-shadow(
     0px 2px 5px #f0f
   );
 }
-
 #about-me{
   position: absolute;
   bottom: 2%;
@@ -112,7 +107,6 @@ body{
     0 0 10px 2px #f0f, /* middle magenta */
     0 0 15px 3px #0ff; /* outer cyan */
 }
-
 .styled-button {
   /*I like Comic Sans #freeComicSans*/
   font-family: 'Comic Sans MS';
@@ -132,14 +126,12 @@ body{
 .styled-button:active {
   color: #0ff; 
 }
-
 .WaI{ 
   transform-origin: center;
   user-select: none;
   text-shadow: 1.2px -1.2px gray;
   margin:10px;
 }
-
 #scrolle_down{
   position: absolute;
   bottom: 4%;
@@ -154,7 +146,6 @@ body{
     0 0 15px 3px #0ff; /* outer cyan */
   font-size: 2vh;
 }
-
 #avatar{
   position: absolute;
   top: 5vh;
@@ -168,7 +159,6 @@ body{
     0 0 10px 2px #f0f, /* middle magenta */
     0 0 15px 3px #0ff; /* outer cyan */
 }
-
 #welcome{
   position: absolute;
   top: 1%;
@@ -183,7 +173,6 @@ body{
     0 0 15px 3px #0ff; /* outer cyan */
   font-size: 3vh;
 }
-
 #contact{
   position: absolute;
   top: 13%;
@@ -198,7 +187,6 @@ body{
     0 0 15px 3px #0ff; /* outer cyan */
   font-size: 1.5vh;
 }
-
 #email-image{
   height: 2vh;
 }
