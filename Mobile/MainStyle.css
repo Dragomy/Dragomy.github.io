@@ -2,6 +2,7 @@ body {
   background-image: url("https://dragomy.github.io/assets/bg_anim.gif");
   background-repeat: repeat;
   background-size: 25vh; 
+  background-color: black;
   text-align: center;
   color: white;
   font-size: 200%;
