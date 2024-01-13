@@ -8,8 +8,13 @@ body {
 
 .a{
   background-color: black;
+  margin: 3vw;
 }
 
 #email-image{
   width: 50vw;
+}
+
+#b{
+  height:20vh;
 }
