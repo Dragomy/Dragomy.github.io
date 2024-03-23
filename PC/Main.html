@@ -1,184 +1,109 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-  <title>Dragomy`s personal Pc site</title>
-  <link rel="icon" type="image/x-icon" href="https://Dragomy.github.io/assets/MyAvatar(Dragomy).jpg">
-  <link rel="stylesheet" href="https://dragomy.github.io/PC/MainStyle.css">
-</head>
-
-<body>
-
-  <div class="div_2023"> 
-    <!--  The lines that go to the center --> 
-      <div id="lines" style="position: relative;">
-      <!-- Line from top left to bottom left -->
-       <svg id="lines" width="100vw" height="100vh" xmlns="http://www.w3.org/2000/svg" style="position: absolute; top: 0; left: 0;">
-        <line x1="0" y1="0" x2="100%" y2="100%" stroke="white" stroke-width="3" />
-      </svg>
-      <!-- line from bottom left to top right -->
-       <svg id="lines" width="100vw" height="100vh" xmlns="http://www.w3.org/2000/svg" style="position: absolute; top: 0; left: 0;">
-        <line x1="0%" y1="100%" x2="100%" y2="0%" stroke="white" stroke-width="3" />
-      </svg>
-      <!-- middle left right -->
-       <svg id="lines" width="100vw" height="100vh" xmlns="http://www.w3.org/2000/svg" style="position: absolute; top: 0; left: 0;">
-        <line x1="0%" y1="50%" x2="100%" y2="50%" stroke="white" stroke-width="3" />
-      </svg>
-      <!-- middle top bottom -->
-       <svg id="lines" width="100vw" height="100vh" xmlns="http://www.w3.org/2000/svg" style="position: absolute; top: 0; left: 0;">
-        <line x1="50%" y1="0%" x2="50%" y2="100%" stroke="white" stroke-width="3" />
-      </svg>
-      <!-- from x 25 to x 75 -->
-       <svg id="lines" width="100vw" height="100vh" xmlns="http://www.w3.org/2000/svg" style="position: absolute; top: 0; left: 0;">
-        <line x1="0%" y1="25%" x2="100%" y2="75%" stroke="white" stroke-width="3" />
-      </svg>
-      <!-- from x 75 to x 25 -->
-       <svg id="lines" width="100vw" height="100vh" xmlns="http://www.w3.org/2000/svg" style="position: absolute; top: 0; left: 0;">
-        <line x1="0%" y1="75%" x2="100%" y2="25%" stroke="white" stroke-width="3" />
-      </svg>
-      <!-- from y 25 to y 75 -->
-       <svg id="lines" width="100vw" height="100vh" xmlns="http://www.w3.org/2000/svg" style="position: absolute; top: 0; left: 0;">
-        <line x1="25%" y1="0%" x2="75%" y2="100%" stroke="white" stroke-width="3" />
-      </svg>
-      <!-- from y 75 to y 25 -->
-       <svg id="lines" width="100vw" height="100vh" xmlns="http://www.w3.org/2000/svg" style="position: absolute; top: 0; left: 0;">
-        <line x1="75%" y1="0%" x2="25%" y2="100%" stroke="white" stroke-width="3" />
-      </svg>
-      
-    </div>
-      
-    <!--  The rectangles creating the cyberspace--> 
-      <div id="rectangle" class="rectangle">
-       <div id="rectangle1" class="rectangle">
-        <div id="rectangle2" class="rectangle">
-         <div id="rectangle2" class="rectangle">
-          <div id="rectangle3" class="rectangle">
-           <div id="rectangle4" class="rectangle">
-            <div id="rectangle5" class="rectangle">
-             
+   <head>
+      <title>Dragomy`s personal Pc site</title>
+      <link rel="icon" type="image/x-icon" href="https://Dragomy.github.io/assets/MyAvatar(Dragomy).jpg">
+      <link rel="stylesheet" href="https://dragomy.github.io/PC/MainStyle.css">
+   </head>
+   <body>
+      <div class="topnav">
+         <a href="#">About Me</a>
+         <a href="#">Contact Me</a>
+         <a href="#">Publications</a>
+         <a href="#">Hobbys</a>
+      </div>
+      <div class="row">
+         <div class="leftcolumn">
+            <div class="card">
+               <h2>About Me</h2>
+               <hr>
+               <img id="avatarImg" src="https://dragomy.github.io/assets/MyAvatar(Dragomy).jpg" width="300" height="300">
+               <p>I'm a what some may call a nerd when it comes to computer science.</p>
+               <p>I'm a student currently living and going to school in Germany.</p>
+               <p>Programming being one of my hobbies, I've tipped my toe in a variety of tools and languages.</p>
+               <p>At the moment, I am mostly interested in data science, game design and web design.</p>
+               <p>Other hobbys of mine are building pcs, design and arts (in which I'm not particularly good), 
+                  building with Legos and Lego a like (In German what I mean is simply titled "Klemmbausteine"), 
+                  cycling, and more.
+               </p>
+               <p></p>
+               <p></p>
+               <p></p>
+               <a href="https://dragomy.github.io/PC/CurriculumVitae.html">
+               <button class="styled-button">See full Curriculum Vitae</button>
+               </a>
             </div>
-           </div>
-          </div>
+            <div class="card">
+               <h2>Contact Me</h2>
+               <hr>
+               <a href="https://stackoverflow.com/users/20522304/dragomy">
+                  <p class= "WaI">Stack Overflow</p>
+               </a>
+               <a href="https://github.com/Dragomy">
+                  <p class= "WaI">GitHub</p>
+               </a>
+               <img src="https://dragomy.github.io/assets/EMail.png" width="auto" height="20">
+            </div>
          </div>
-        </div>
-       </div>
-     </div>
-      
-    <!--  about me section bottom right -->  
-      <div id="about-me">
-        <h1 class= "WaI"> Hello!</h1>
-        <h2 class= "WaI"> Welcome to this website</h2>
-        <hr>
-      <p class="WaI"> I'm a student currently living in Germany. Programming being one of my hobbies, I've tipped my toe in a variety of tools and languages such as Java, GDScript (HTML, CSS, and JS), Python and C#. At the moment, I am mostly interested in web development (mostly frontend) and deep learning technology, especially when it comes to picture-generating algorithms like Stable Diffusion and data science. </p>
-      
-    <hr>
-      <a href="https://dragomy.github.io/PC/CurriculumVitae.html">
-          <button class="styled-button" id="CurViButton">See full Curriculum Vitae</button>
-      </a>
-    </div>
-    
-    <!--  scrole down info --> 
-      <div id="scrolle_down">
-        <h1 class= "WaI"> Please scroll down!</h1>
-        
+         <div class="rightcolumn">
+            <div class="card">
+               <h2>Greetings Visitor!</h2>
+               <hr>
+               <p>This site is meant as an addition to my curriculum vitae and may serve 
+                  as an additional Attachment in application emails, 
+                  which maybe been the way you found this site. 
+               </p>
+               <p>This page is made entirely in my free time and thanks to GitHub costs nothing to host. </p>
+               <p>If you like the site maybe check back on it sometimes even if this site may not be updated for several months. </p>
+               <p>If you see this on mobile something with the redirect does not work, I encountered that problem several times with 
+                  Apple devices.
+               </p>
+               <p> If it looks weird on a desktop platform, 
+                  something went horribly wrong, it shouldn't. 
+               </p>
+               <p>This page was designed 
+                  and optimized for 1920 pixel by 1080 pixel screens on desktop and 
+                  laptop computing devices, and tested only in Firefox. 
+               </p>
+               <p></p>
+               <p></p>
+               <p></p>
+               <p></p>
+            </div>
+            <div class="card">
+               <h2>Publications</h2>
+               <hr>
+               <div class="showcase">
+                  <div class="element">
+                     <a href="https://dragomy.itch.io/godot-4-voxel-test">
+                     <img src="https://img.itch.zone/aW1nLzE1MTkzMTQ3LnBuZw==/315x250%23c/h3xlbv.png" width="100%" height="auto">
+                     </a>
+                     <div class="text">Godot4 VoxelTest</div>
+                  </div>
+                  <div class="element">
+                     <a href="https://dragomy.itch.io/small-voxel-asset-pack">
+                     <img src="https://img.itch.zone/aW1nLzE1MTkxMzI1LnBuZw==/315x250%23c/gnEJCs.png" width="100%" height="auto">
+                     </a>
+                     <div class="text">Small Voxel Assets Pack</div>
+                  </div>
+                  <div class="element">
+                     <a href="https://www.youtube.com/watch?v=cP7hhtCGtb4">
+                     <img src="https://dragomy.github.io/assets/VoxelThumbnail.png" width="100%" height="auto">
+                     </a>
+                     <div class="text">Exploring Voxels using Godot 4 (Video)</div>
+                  </div>
+               </div>
+            </div>
+            <div class="card">
+               <h2>Hobbys</h2>
+               <hr>
+            </div>
+         </div>
       </div>
-    
-    <!-- Avatar Image--> 
-      <div id="avatar">
-        <img src="https://dragomy.github.io/assets/MyAvatar(Dragomy).jpg">
+      <div class="footer">
+         <hr>
+         <h2>This is it, this is the End</h2>
       </div>
-      
-    <!--  scrole down info --> 
-      <div id="welcome">
-        <h1 class= "WaI"> Welcome to the Cyberspace.</h1>
-        
-      </div> 
-      
-    <!--  scrole down info --> 
-      <div id="contact">
-        <h1 class= "WaI">Contact Me</h1>
-        
-          <a href="https://stackoverflow.com/users/20522304/dragomy">
-              <p class= "WaI">Stack Overflow</p>
-          </a>
-        
-          <a href="https://github.com/Dragomy">
-              <p class= "WaI">GitHub</p>
-          </a>
-        
-          <a href="">
-              <p class= "WaI">EMail:</p>
-              <img src="https://dragomy.github.io/assets/EMail.png" id="email-image">
-          </a>
-        
-      </div>
-      
-    </div>
-    
-    <div class="div_1994"> 
-      <h1 id="welcome_text">Welcome to </h1>
-      <img src="https://dragomy.github.io/assets/spamton.gif">
-      <img src="https://dragomy.github.io/assets/logo.png">
-      <img src="https://web.archive.org/web/20090821204841im_/http://geocities.com/SouthBeach/Canal/8593/computer.gif">
-       <h1>Navigation Menu:</h1>
-      
-        <a href="https://dragomy.github.io/PC/CurriculumVitae.html">
-            <button id="b1" class="old_button" type="button">CurriculumVitae</button>
-        </a>
-      
-        <a href="https://github.com/Dragomy">
-            <button id="b2" class="old_button"type="button">.</button>
-        </a>
-        <a href="">
-            <button id="b3" class="old_button"type="button">Hobbies</button>
-          Hobbies Currently links to nothing evrything is a Work in Progress
-        </a>
-      <hr>
-      
-      <h2>Welcome to my web page!</h2>
-      <p>Hello, person reading this. 
-    I'm a what some may call a nerd when it comes to computer science. 
-    I like data science, building pcs, design and arts (in which I'm not particularly good), programming,  building with Legos and Lego a like (In German what I mean is simply titled "Klemmbausteine"), cycling, and more.
-    This site is meant as an addition to my GitHub profile as well as my curriculum vitae and may serve as an additional Attachment in application emails, which maybe been the way you found this site.
-    This page is made entirely in my free time and thanks to GitHub costs nothing for me. 
-    If you like the site, give it a bookmark and check back on it sometimes. 
-    I tend to update the links and stuff on here whenever I get around to it. 
-    But sometimes this site may not be upgraded for several months.
-    The goal of this website is to be a humorous personal website that is written with at least JavaScript used as possible for me.
-    If you see this on mobile something with the redirect does not work, I encountered that problem several times with Apple devices.
-    A dedicated mobile site shall be made in the future, you than may find it here. 
-    If it looks weird on a desktop platform, something went horribly wrong, it shouldn't. 
-    This page was designed and optimized for 1920 pixel by 1080 pixel screens on desktop and laptop computing devices, and tested only in Firefox. </p>   
-    <hr>
-    </div>
-    
-    <div class="div_1991"> 
-      
-      <H1>Dragomy.github.io</H1>
-      <p>This website is part of the WorldWideWeb as well as other personal website this may not provide any benefit on a larger scale but it may be one little place in a large universe of documents.<p> 
-      
-      <A HREF="https://en.wikipedia.org/wiki/Curriculum_vitae">Curriculum Vitae</A>
-      <p>A curriculum vitae is a document summarizing one's educational and professional achievements, typically used for job applications or in this case to make a website longer however <A HREF="https://dragomy.github.io/PC/CurriculumVitae.html">here</A> is mine</p>
-      
-      <A HREF="https://en.wikipedia.org/wiki/Sisyphus">My Programming Projects</A>
-      <p>In my freetime I like to programm most of my projects is publicly stored on my github Account you can find <A HREF="https://github.com/Dragomy?tab=repositories">here</A>.</p> 
-        
-      <DT><A HREF="https://en.wikipedia.org/wiki/Lego_Technic">Technical</A>
-      <DD> The goal of this website is to be a humorfull personal website that is written with at least JavaScript used.<DT>
-      
-      <A HREF="">History</A>
-      <DD> This site is the now 5th iteration of itself.<DT>
-      
-      <A HREF="">Origins</A> 
-      <p> This part of the website is ment as thank you for the internet. </p>
-      <p> This especially is a tribute to the first website ever recreated <A HREF="http://info.cern.ch/hypertext/WWW/TheProject.html">here</A>. </p>
-      
-    </div>
-
-</body>
-
-<script type="text/javascript" src="PcMainScript.js">
-
-</script>
-
+   </body>
+   <script type="text/javascript" src="PcMainScript.js"></script>
 </html>

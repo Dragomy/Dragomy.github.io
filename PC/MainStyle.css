@@ -1,192 +1,120 @@
-body{
-  background-color: black;
-}
-/*----------------------------*/
-.div_1994{
-  width: 99vw;
-  height: 102vh;
-  margin: -8px;
-  background-image: url("https://dragomy.github.io/assets/bg_img_1.png");
-  background-repeat: repeat;
-  background-color: black;
+*{ 
+  text-decoration: none;
   color: white;
-  text-align: center;
-}
-#welcome_text{
-  font-size: 8vh;
-  margin: 0;
-}
-.div_1991{
-  width: 99.6vw;
-  height: 99.5vh;
-  background-color: white;
-}
-/*----------------------------*/
-.old_button{
-   height: 3vh;
-  border: inset gray;
-  background-repeat: no-repeat;
-  object-fit: cover;
-  cursor: pointer;
-}
-.old_button:hover{
-  border: inset purple;
-}
-#b1{
-  background: url('https://dragomy.github.io/assets/lined-paper.png');
-  font-family: "Comic Sans MS", "Comic Sans", cursive;
-  text-shadow: 2px 2px white;
-}
-#b2{
-  width: 5vw;
-  display: inline-block;
-  background-image: url('https://dragomy.github.io/assets/GitHub_button.png'); 
-  background-size: cover;
-  background-position: center;
-}
-/*----------------------------*/
-.div_2023{
-  width: 99vw;
-  height: 102vh;
-  background-color: black;
-}
-.rectangle{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  box-shadow:
-    0 0 5px 1px #fff,  /* inner white */
-    0 0 10px 2px #f0f, /* middle magenta */
-    0 0 15px 3px #0ff; /* outer cyan */
-  border-style: solid;
-}
-#rectangle {
-  width: 90vw;
-  height: 90vh;
-}
-#rectangle1 {
-  width: 80vw;
-  height: 80vh;
-}
-#rectangle2 {
-  width: 70vw;
-  height: 70vh;
-}
-#rectangle3 {
-  width: 60vw;
-  height: 60vh;
-}
-#rectangle4 {
-  width: 50vw;
-  height: 50vh;
-}
-#rectangle5 {
-  width: 40vw;
-  height: 40vh;
-  background-color:black;
-}
-#lines{
-  filter: drop-shadow(
-    0px 2px 5px #f0f
-  );
-}
-#about-me{
-  position: absolute;
-  bottom: 2%;
-  right: 2%;
-  color: white;
-  width: 30vw;
-  height: 50vh;
-  border-style: solid;
-  background-color:black;
-  overflow: hidden;
-  box-shadow:
-    0 0 5px 1px #fff,  /* inner white */
-    0 0 10px 2px #f0f, /* middle magenta */
-    0 0 15px 3px #0ff; /* outer cyan */
-}
-.styled-button {
-  /*I like Comic Sans #freeComicSans*/
-  font-family: 'Comic Sans MS';
+  border-color: white;
+  }
+  body {
+  text-decoration: none; 
+  font-family: Arial;
+  padding: 2%;
+  background: black;
+  }
   
-  width:100%;
-  height:auto;
-  font-size: 30px; 
-  text-decoration: underline; 
-  border: none;
-  background-color: black; 
-  color: white;
-  cursor: pointer;
-}
-.styled-button:hover {
-  color: #765898; 
-}
-.styled-button:active {
-  color: #0ff; 
-}
-.WaI{ 
-  transform-origin: center;
-  user-select: none;
-  text-shadow: 1.2px -1.2px gray;
-  margin:10px;
-}
-#scrolle_down{
-  position: absolute;
-  bottom: 4%;
-  left: 40%;
-  color: white;
-  border-style: solid;
-  background-color:black;
+  .topnav {
   overflow: hidden;
+  background-color: black;
   box-shadow:
-    0 0 5px 1px #fff,  /* inner white */
-    0 0 10px 2px #f0f, /* middle magenta */
-    0 0 15px 3px #0ff; /* outer cyan */
-  font-size: 2vh;
-}
-#avatar{
-  position: absolute;
-  top: 5vh;
-  right: 5vw;
-  color: white;
+  0 0 5px 1px #fff,  /* inner white */
+  0 0 10px 2px #f0f, /* middle magenta */
+  0 0 15px 3px #0ff; /* outer cyan */
   border-style: solid;
-  background-color:black;
-  overflow: hidden;
-  box-shadow:
-    0 0 5px 1px #fff,  /* inner white */
-    0 0 10px 2px #f0f, /* middle magenta */
-    0 0 15px 3px #0ff; /* outer cyan */
-}
-#welcome{
-  position: absolute;
-  top: 1%;
-  left: 1%;
+  }
+  
+  .topnav a {
+  float: left;
   color: white;
-  border-style: solid;
-  background-color:black;
-  overflow: hidden;
-  box-shadow:
-    0 0 5px 1px #fff,  /* inner white */
-    0 0 10px 2px #f0f, /* middle magenta */
-    0 0 15px 3px #0ff; /* outer cyan */
-  font-size: 3vh;
-}
-#contact{
-  position: absolute;
-  top: 13%;
-  left: 1%;
+  padding: 14px;
+  }
+  
+  .topnav a:hover {
+  background-color: purple;
   color: white;
-  border-style: solid;
-  background-color:black;
+  }
+  
+  .leftcolumn {  
+  float: left;
+  width: 19%;
+  background-color:rgba(0, 0, 0, 0);
+  padding-left: 0px;
+  }
+  
+  .rightcolumn {
+  float: right;
+  width: 80%;
+  }
+  
+  .card {
   overflow: hidden;
+  background-color: black;
+  color: white;
+  padding: 20px;
+  margin-top: 20px;
+  border-color: white;
   box-shadow:
-    0 0 5px 1px #fff,  /* inner white */
-    0 0 10px 2px #f0f, /* middle magenta */
-    0 0 15px 3px #0ff; /* outer cyan */
-  font-size: 1.5vh;
-}
-#email-image{
-  height: 2vh;
-}
+  0 0 5px 1px #fff,  /* inner white */
+  0 0 10px 2px #f0f, /* middle magenta */
+  0 0 15px 1px #0ff; /* outer cyan */
+  border-style: solid;
+  }
+  
+  .row::after {
+  content: "";
+  display: table;
+  clear: both;
+  }
+  
+  .footer {
+  padding: 20px;
+  text-align: center;
+  background: black;
+  color: white;
+  margin-top: 20px;
+  }
+  
+  @media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+  width: 100%;
+  }
+  }
+  
+  @media screen and (max-width: 400px) {
+  .topnav a {
+  float: none;
+  width: 100%;
+  }
+  }
+  
+  .element {
+  border-style: solid;
+  border-color: purple;
+  float: left;
+  display: block;
+  margin: 1%;
+  width: 200px;
+  height:200px;
+  background-color: purple;
+  border-radius:10px;
+  }
+  .element:hover {
+  border-radius:0px;
+  border-color: white;
+  background-color:white;
+  }
+  .element:hover .text{
+  border-radius:0px;
+  border-color: white;
+  color:black;
+  background-color:white;
+  }
+  .text{
+  margin:5px;
+  }
+  .styled-button{
+  background-color:black;
+  border-color:purple;
+  }
+  .styled-button:hover{
+  background-color:black;
+  border-color:white;
+  }
+  
