@@ -3,32 +3,12 @@
   color: white;
   border-color: white;
   }
+
   body {
   text-decoration: none; 
   font-family: Arial;
   padding: 2%;
   background: black;
-  }
-  
-  .topnav {
-  overflow: hidden;
-  background-color: black;
-  box-shadow:
-  0 0 5px 1px #fff,  /* inner white */
-  0 0 10px 2px #f0f, /* middle magenta */
-  0 0 15px 3px #0ff; /* outer cyan */
-  border-style: solid;
-  }
-  
-  .topnav a {
-  float: left;
-  color: white;
-  padding: 14px;
-  }
-  
-  .topnav a:hover {
-  background-color: purple;
-  color: white;
   }
   
   .leftcolumn {  
@@ -41,6 +21,12 @@
   .rightcolumn {
   float: right;
   width: 80%;
+  }
+  
+  .fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
   }
   
   .card {
@@ -83,7 +69,7 @@
   width: 100%;
   }
   }
-  
+
   .element {
   border-style: solid;
   border-color: purple;
@@ -95,24 +81,29 @@
   background-color: purple;
   border-radius:10px;
   }
+
   .element:hover {
   border-radius:0px;
   border-color: white;
   background-color:white;
   }
+
   .element:hover .text{
   border-radius:0px;
   border-color: white;
   color:black;
   background-color:white;
   }
+
   .text{
   margin:5px;
   }
+
   .styled-button{
   background-color:black;
   border-color:purple;
   }
+  
   .styled-button:hover{
   background-color:black;
   border-color:white;
