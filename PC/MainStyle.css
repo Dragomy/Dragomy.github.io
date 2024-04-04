@@ -3,32 +3,33 @@
   color: white;
   border-color: white;
   }
-
   body {
   text-decoration: none; 
   font-family: Arial;
   padding: 2%;
   background: black;
+  font-family: Monospace, Arial, sans-serif;
   }
-  
+  /* Create two unequal columns that floats next to each other */
+  /* Left column */
   .leftcolumn {  
   float: left;
   width: 19%;
   background-color:rgba(0, 0, 0, 0);
   padding-left: 0px;
   }
-  
+  /* Right column */
   .rightcolumn {
   float: right;
   width: 80%;
   }
-  
+  /* Fake image */
   .fakeimg {
   background-color: #aaa;
   width: 100%;
   padding: 20px;
   }
-  
+  /* Add a card effect for articles */
   .card {
   overflow: hidden;
   background-color: black;
@@ -42,13 +43,13 @@
   0 0 15px 1px #0ff; /* outer cyan */
   border-style: solid;
   }
-  
+  /* Clear floats after the columns */
   .row::after {
   content: "";
   display: table;
   clear: both;
   }
-  
+  /* Footer */
   .footer {
   padding: 20px;
   text-align: center;
@@ -56,20 +57,21 @@
   color: white;
   margin-top: 20px;
   }
-  
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
   @media screen and (max-width: 800px) {
   .leftcolumn, .rightcolumn {   
   width: 100%;
   }
   }
-  
+  /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
   @media screen and (max-width: 400px) {
   .topnav a {
   float: none;
   width: 100%;
   }
   }
-
+  .showcase {
+  }
   .element {
   border-style: solid;
   border-color: purple;
@@ -81,29 +83,24 @@
   background-color: purple;
   border-radius:10px;
   }
-
   .element:hover {
   border-radius:0px;
   border-color: white;
   background-color:white;
   }
-
   .element:hover .text{
   border-radius:0px;
   border-color: white;
   color:black;
   background-color:white;
   }
-
   .text{
   margin:5px;
   }
-
   .styled-button{
   background-color:black;
   border-color:purple;
   }
-  
   .styled-button:hover{
   background-color:black;
   border-color:white;
