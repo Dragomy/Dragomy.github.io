@@ -11,7 +11,6 @@
   padding: 0.5vw;
 }
 .card:hover{
-  border-style: groove;
   color: #AD7CA4;
 }
 
@@ -29,14 +28,6 @@
   margin: 1%;
   width: 98% ;
   height: 98%;
-}
-.image:hover{
-  border-style: solid;
-  border-color: #AD7CA4;
-  border-radius: 4px;
-  margin: 1%;
-  width: 97% ;
-  height: 97%;
 }
 
 .button {
@@ -89,5 +80,3 @@ clear: both;
 #Server{
    width: 30%;
 }
-
-/*Dont know why but GitHub pages does use the old stylesheet even this new one is rightly pushed*/
