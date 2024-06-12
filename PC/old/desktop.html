@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dragomy's Site</title>
+    <link rel="icon" type="image/x-icon" href="https://Dragomy.github.io/assets/img/avatar.png">
+    <style>
+            body {
+  background-image: url('https://i.imgur.com/Q1WLT9K.jpg');
+  background-repeat: no-repeat;
+  background-size: cover +100%; 
+}
+
+/* Menue Styles */
+.taskbar {
+  background-color: #6b76d1;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+.taskbar .startmenu {
+  color: #fff;
+  font-family: Arial, sans-serif;
+  font-size: 40px;
+  padding: 0 9px;
+  line-height: 40px;
+  cursor: pointer;
+}
+.taskbar .startmenu:hover {
+ background-color: #5b65d0;
+}
+.taskbar .application {
+  color: #fff;
+  background-color: #6b76d1;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  padding: 0 10px;
+  line-height: 40px;
+  cursor: pointer;
+}
+.taskbar .application:hover {
+ background-color: #5b65d0;
+}
+
+/* Locations and such things */
+.myavatar {
+  display: inline-block;
+  position: absolute;
+  width: 290px;
+  height: 315px;
+  background-color: #000000;
+  border: 3px solid #6b76d1;
+  box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.75);
+  margin: 0 auto;
+}
+.aboutme {
+  display: inline-block;
+  position: absolute;
+  
+  top: 40%;
+  right: 60%;
+  
+  width: 500px;
+  height: 300px;
+  background-color: #efedde;
+  border: 3px solid #6b76d1;
+  box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.75);
+  overflow: hidden;
+  margin: 0 auto;
+}
+.findme {
+  display: inline-block;
+  position: fixed;
+  
+  top: 5%;
+  right: 10%;
+  
+  width: 200px;
+  height: 220px;
+  background-color: #efedde;
+  border: 3px solid #6b76d1;
+  box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.75);
+  overflow: hidden;
+  margin: 0 auto;
+}
+.terminal {
+  display: inline-block;
+  position: fixed;
+  top: 50%;
+  right: 20%;
+  width: 500px;
+  height: 320px;
+  background-color: #000000;
+  border: 3px solid #6b76d1;
+  box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.75);
+  overflow: hidden;
+  margin: 0 auto;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 14px;
+ color: white;
+  
+ 
+  
+}
+.ClickMeWindow {
+  display: inline-block;
+  position: absolute;
+  top: 15%;
+  right: 29%;
+  width: 400px;
+  height: 300px;
+  background-color: #efedde;
+  border: 3px solid #6b76d1;
+  box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.75);
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+/* ClickMe Button */
+.button_DCMIS{
+  position: absolute;
+  top: 65%;
+  left: 30%;
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #f00;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 9px #999;
+}
+.button_DCMIS:active {
+  background-color: #e00;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+/*Terminal Special Styles*/
+.terminal-output {
+  height: 220px;
+  overflow: auto;
+  margin-bottom: 10px;
+}
+.terminal-input {
+  display: flex;
+  align-items: center;
+}
+.terminal-prompt {
+  margin-right: 5px;
+}
+
+/* Windows XP Window Styles */
+.window-header {
+  position: relative;
+  height: 30px;
+  background-color: #6b76d1;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 0 6px;
+  line-height: 30px;
+}
+.icon-Image{
+  width: 15px;
+  height: 15px;
+}
+.window-buttons {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.window-buttons button {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.window-buttons .close {
+  background-image: url('https://img.icons8.com/windows/32/000000/close-window.png');
+}
+.window-buttons .maximize {
+  background-image: url('https://img.icons8.com/windows/32/000000/maximize-window.png');
+}
+.window-buttons .minimize {
+  background-image: url('https://img.icons8.com/windows/32/000000/minimize-window.png');
+}
+.window-content {
+  position: relative;
+  width: 100%;
+  height: calc(100% - 30px);
+  overflow: auto;
+  padding: 16px;
+}
+.win {
+  font-family: "Segoe UI", Tahoma, sans-serif;
+   padding: 9px;
+}
+
+/* Curriculum Vitae */
+.wp-window {
+  display: inline-block;
+  position: relative;
+  width: 900px;
+  height: 750px;
+  background-color: #efedde;
+  border: 3px solid #6b76d1;
+  box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.75);
+  overflow: hidden;
+  margin: 0 auto;
+}
+.wp-window-header {
+  position: relative;
+  height: 30px;
+  background-color: #6b76d1;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 0 6px;
+  line-height: 30px;
+}
+.icon-Image{
+  width: 15px;
+  height: 15px;
+}
+.window-buttons {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.window-buttons button {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.window-buttons .close {
+  background-image: url('https://img.icons8.com/windows/32/000000/close-window.png');
+}
+.window-buttons .maximize {
+  background-image: url('https://img.icons8.com/windows/32/000000/maximize-window.png');
+}
+.window-buttons .minimize {
+  background-image: url('https://img.icons8.com/windows/32/000000/minimize-window.png');
+}
+.wp-window-content {
+  position: relative;
+  width: 100%;
+  height: calc(100% - 30px);
+  overflow: auto;
+  
+}
+.wp-helpbar {
+  background-color: #ece9d8;
+  width: 894px;
+  height: 20px;
+  border: 2px solid #cccac1;
+  box-shadow: 0px 0px 1px 1px rgba(255,255,255,0.75);
+  margin: 0 auto;
+}
+.wp-toolbar {
+  background-color: #ece9d8;
+  width: 894px;
+  height: 25px;
+  border: 2px solid #cccac1;
+  box-shadow: 0px 0px 1px 1px rgba(255,255,255,0.75);
+  margin: 0 auto;
+}
+.wp-texttools {
+  background-color: #ece9d8;
+  width: 894px;
+  height: 25px;
+  border: 2px solid #cccac1;
+  box-shadow: 0px 0px 1px 1px rgba(255,255,255,0.75);
+  margin: 0 auto;
+  display: flex;
+}
+.wp-font {
+  position: relative;
+  background-color: #fff;
+  width: 100px;
+  height: 18px;
+  border: 2px solid #9bb1c2;
+  box-shadow: 0px 0px 1px 1px rgba(255,255,255,0.75);
+  margin: 0 auto;
+  margin-left: 5px;
+}
+.wp-scale {
+  position: absolute;
+  background-color: #fff;
+  width: 60px;
+  height: 18px;
+  border: 2px solid #9bb1c2;
+  box-shadow: 0px 0px 1px 1px rgba(255,255,255,0.75);
+  margin-left: 130px;
+}
+.wp-style {
+  position: absolute;
+  background-color: #fff;
+  width: 80px;
+  height: 18px;
+  border: 2px solid #9bb1c2;
+  box-shadow: 0px 0px 1px 1px rgba(255,255,255,0.75);
+  margin: 0 auto;
+  margin-left: 214px;
+}
+.wp-innersc {
+  position: absolute;
+  background-color: #fff;
+  width: 895px ;
+  height: 18px;
+  border: 2px solid #000;
+  box-shadow: 0px 0px 1px 1px rgba(255,255,255,0.75);
+  margin: 0 auto;
+  overflow: hidden;
+}
+.wp-paper {
+  background-color: #fff;
+  width: 885px;
+  height: 1160px;
+  border: 2px solid #cccac1;
+  box-shadow: 0px 0px 1px 1px rgba(255,255,255,0.75);
+  margin: 0 auto;
+}
+.wp-text {
+  margin-right: 10px;
+}
+    </style>
+  </head>
+  <body>
+        <!-- "Taskbar"-Menu -->
+  <div class="taskbar">
+    <div class="startmenu">
+
+      <img src="https://Dragomy.github.io/assets/CrosshairOSLogo.png" width="25" height="25"> 
+
+    </div>
+
+    <!-- Curriculum Vitae -->
+    <button class="application" , id="curvButton">Curriculum Vitae</button>
+    <!--  My_Avatar.png -->
+    <button class="application" , id="avarButton">My_Avatar.png</button>
+    <!-- About_Me.txt -->
+    <button class="application" , id="aboutButton">About_Me.txt</button>
+    <!-- Command Prompt -->
+    <button class="application" , id="termButton">Command Prompt</button>
+    <!-- FIND ME -->
+    <button class="application" , id="findmeButton">FIND ME</button>
+
+    <div class="application"></div>
+  </div>
+
+  <!-- My_Avatar.png -->
+  <div id="mavata" style="display: block;">
+    <div class="myavatar">
+      <div class="window-header">
+        <span>🖼️ My_Avatar.png</span>
+        <div class="window-buttons">
+          <button class="minimize" id="minimizemyavatar"></button>
+          <button class="maximize"></button>
+          <button class="close" id="closemyavatar"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- About_Me.txt -->
+  <div id="aboutme" style="display: block;">
+    <div class="aboutme">
+      <div class="window-header">
+        <span>📄About_Me.txt</span>
+        <div class="window-buttons">
+          <button class="minimize" id="minimizeaboutme"></button>
+          <button class="maximize"></button>
+          <button class="close" id="closeaboutme"></button>
+        </div>
+      </div>
+      <div class="window-content">
+        <h4>Hello ! Welcome to this Website :D</h4>
+        <p class="win">
+          I'm a 15-year-old student living in Germany.
+          I program in Java, GDScript, (HTML.CSS, Js), Python and C#.
+          I am always looking to expand my knowledge and skills, and I am particularly interested in learning more about
+          Front-End Development / Deep Learning technology especially when it comes to llm`s or Picture Generating Ais.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- FINDME -->
+  <div id="findme" style="display: block;">
+    <div class="findme">
+      <div class="window-header">
+        <span>🗺️ FIND ME</span>
+        <div class="window-buttons">
+          <button class="minimize" id="minimizefindme"></button>
+          <button class="maximize"></button>
+          <button class="close" id="closefindme"></button>
+        </div>
+      </div>
+      <div class="window-content">
+        <div class="LINK">
+          <a href="https://stackoverflow.com/users/20522304/dragomy"><span>&#x1F4BB;</span>Stackoverflow</a>
+
+        </div>
+        <div class="LINK">
+          <a href="https://github.com/Dragomy"><span>&#x1F5C4;</span> GitHub</a>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+  <!-- UpdateTerminal -->
+  <div id="term" style="display: block;">
+    <div class="terminal">
+      <div class="window-header">
+        <span>⚙️Command Prompt</span>
+        <div class="window-buttons">
+          <button class="minimize" id="minimizeterminal"></button>
+          <button class="maximize"></button>
+          <button class="close" id="closeterminal"></button>
+        </div>
+      </div>
+      <div class="window-content">
+        <!-- Terminal -->
+        <h> Start by typing help</h>
+        <div class="terminal-output"></div>
+        <div class="terminal-input">
+          <span class="terminal-prompt">$</span>
+          <input type="text" id="terminal-input-field">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ClickMe-GAME -->
+  <div class="ClickMeWindow" id="ClickMeWindow">
+    <div class="window-header">
+      <span>ClickME-Minigame</span>
+      <div class="window-buttons">
+        <button class="minimize"></button>
+        <button class="maximize"></button>
+        <button class="close"></button>
+      </div>
+    </div>
+    <div class="window-content" id="specials">
+
+      <h2> Click the Button as fast as possible</h2>
+      <p id="counter">This will show your clicks.</p>
+      <p id="demo"></p>
+      <!-- Don't Click Me I'm Scared -->
+      <button class="button_DCMIS" id="button_DCMIS" onclick="minigame()">Click Me</button>
+
+    </div>
+  </div>
+
+  <!-- Curriculum Vitae -->
+  <div id="curvitae" style="display: none;">
+    <!-- Content inside the div -->
+    <div class="wp-window">
+      <div class="wp-window-header">
+        <span>Document - WordPad</span>
+        <div class="window-buttons">
+          <button class="minimize" id="minimizecurvitae"></button>
+          <button class="maximize"></button>
+          <button class="close" id="closecurvitae"></button>
+        </div>
+      </div>
+      <div class="wp-window-content">
+        <div class="wp-helpbar">
+          <h> File Edit View Insert Format Help </h>
+        </div>
+        <div class="wp-toolbar">
+          <h> 📄 📂 💾 🖨️ 🔍 🔭 ✂️ 📑 📙 ↩️ 🗓️ </h>
+        </div>
+
+        <div class="wp-texttools">
+          <div class="wp-font">
+            <h> Arial </h>
+            <h> ▽ </h>
+          </div>
+          <div class="wp-scale">
+            <h> 10 </h>
+            <h> ▽ </h>
+          </div>
+          <div class="wp-style">
+            <h> Western </h>
+            <h> ▽ </h>
+          </div>
+          <div class="wp-text">
+            <h>B I U 🎨 ⊫ ≣ ⫤ ⊩ </h>
+          </div>
+        </div>
+
+        <div class="wp-texttools">
+          <div class="wp-innersc">
+            <h>----|----1 </h>
+            <h>----|----2 </h>
+            <h>----|----3 </h>
+            <h>----|----4 </h>
+            <h>----|----5 </h>
+            <h>----|----6 </h>
+            <h>----|----7 </h>
+            <h>----|----8 </h>
+            <h>----|----9 </h>
+            <h>----|----10 </h>
+            <h>----|----11 </h>
+            <h>----|----12 </h>
+            <h>----|----13 </h>
+            <h>----|----14 </h>
+            <h>----|--- </h>
+          </div>
+        </div>
+        <div class="wp-paper">
+
+          <!-- Put your text in here -->
+
+          <h2> Full Name: xxxxxxxxxxx </h2>
+
+          <h3>Contact Information: </h3>
+          <h5> Phone: +49xxxxxxxxxxx</h5>
+          <h5>Email: dragomy1.02@gmail.com</h5>
+          <h5> Location: xxxxxxxxxxxxx, (NRW) Germany</h5>
+
+          <h3>Objective:</h3>
+          <h5>As a student, I am seeking small jobs and internships in NRW and RLP, Germany, or remote positions. I have
+            a strong interest in information technology, particularly in deep learning through LLMs and image generation
+            models. Additionally, I am passionate about game development using Unity or Godot. I have experience with
+            Java, C#, GDScript, HTML, CSS, JavaScript, React, and Remix. While I am particularly interested in front-end
+            design, I am eager to learn and expand my skills in any area offered.</h5>
+
+          <h3>Professional Summary:</h3>
+          <h5>I am a motivated student with a keen interest in information technology, deep learning, and game
+            development. I have proficiency in Java, GDScript, C#, HTML, CSS, JavaScript, React, and Remix. I have
+            worked with tools such as Visual Studio Code, Godot Engine, Unity, Unreal Engine, CodePen, and Android
+            Studio. Additionally, I have experience setting up a home server using OpenMediaVault. I possess the ability
+            to assist with Android and iOS troubleshooting and I am always eager to expand my knowledge.</h5>
+
+          <h3>Education:</h3>
+          <h5> Currently pursuing Abitur (expected completion in two years,2025)</h5>
+
+          <h3>Work Experience:</h3>
+          <h5> No prior work experience</h5>
+
+          <h3>Skills:</h3>
+          <h5> Programming Languages: Java, GDScript, C#, HTML, CSS, JavaScript, React, Remix
+            <h5> Tools and Technologies: Visual Studio Code, Godot Engine, Unity, Unreal Engine, CodePen, Android
+              Studio, OpenMediaVault</h5>
+            <h5> Language Proficiency: German (native), English (advanced)</h5>
+            <h5> Problem-solving: Able to troubleshoot and explain solutions effectively</h5>
+            <h5> PC/Server Building: Knowledge and experience in building PCs and servers</h5>
+            <h5> Artisanal Experience: Possess some artisanal skills</h5>
+
+            <h3>Projects:</h3>
+            <h5> GitHub: https://github.com/Dragomy</h5>
+            <h5> Website: https://dragomy.github.io/</h5>
+
+            <h3>References:</h3>
+            <h5>Available upon request</h5>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </body>
+  <script>
+        //ClickMe Minigame
+var counter = 0;
+var timeoutId;
+
+function minigame() {
+//Move Game Window
+var container = document.getElementById("ClickMeWindow");
+var screenWidth = window.innerWidth;
+var screenHeight = window.innerHeight;
+
+var randomX = Math.floor(Math.random() * (screenWidth - container.offsetWidth));
+var randomY = Math.floor(Math.random() * (screenHeight - container.offsetHeight));
+
+container.style.left = randomX + "px";
+container.style.top = randomY + "px";
+  
+//FUN Values 
+counter = counter + 1;
+document.getElementById("counter").innerHTML = counter;
+  
+  if (counter == 2) {
+     document.getElementById("counter").innerHTML = "Double Click:" + counter;
+} else if (counter == 3) {
+     document.getElementById("counter").innerHTML = "Triple Click:"+ counter;
+} else if (counter == 4) {
+     document.getElementById("counter").innerHTML = "Overclick:"+ counter;
+} else if (counter == 5) {
+     document.getElementById("counter").innerHTML = "Clicktacular + Clicking Spree:"+ counter;
+} else if (counter == 6) {
+     document.getElementById("counter").innerHTML = "Clicktrocity:"+ counter;
+} else if (counter == 7) {
+     document.getElementById("counter").innerHTML = "Clickamanjaro:"+ counter;
+} else if (counter == 8) {
+     document.getElementById("counter").innerHTML = "Clicktastrophe:"+ counter;
+} else if (counter == 9) {
+     document.getElementById("counter").innerHTML = "Clickpocalypse:"+ counter;
+ } else if (counter == 10) {
+     document.getElementById("counter").innerHTML = "Clickionaire + Clicking Frenzy:"+ counter;
+} else if (counter == 15) {
+     document.getElementById("counter").innerHTML = "Clicking Riot:"+ counter;
+} else if (counter == 20) {
+     document.getElementById("counter").innerHTML = "Rampage:"+ counter;  
+} else if (counter == 25) {
+     document.getElementById("counter").innerHTML = "Nightmare:"+ counter;  
+} else if (counter == 30) {
+     document.getElementById("counter").innerHTML = "Boogeyman:"+ counter;  
+} else if (counter == 30) {
+     document.getElementById("counter").innerHTML = "Grim Reaper:"+ counter;  
+} else if (counter == 30) {
+     document.getElementById("counter").innerHTML = "Demon:"+ counter;  
+}
+
+  // Reset counter if button is not pressed within 2 seconds
+  clearTimeout(timeoutId);
+  timeoutId = setTimeout(function () {
+    counter = 0;
+    document.getElementById("counter").innerHTML = counter;
+  }, 1000);
+  
+}
+//Other Scripts
+function toggleDisplay(elementId) {
+  const element = document.getElementById(elementId);
+  element.style.display = (element.style.display === 'none') ? 'block' : 'none';
+}
+
+function addButtonClickListener(buttonId, divId) {
+  const button = document.getElementById(buttonId);
+  const div = document.getElementById(divId);
+  button.addEventListener('click', function() {
+    toggleDisplay(divId);
+  });
+}
+
+addButtonClickListener('curvButton', 'curvitae');
+addButtonClickListener('termButton', 'term');
+addButtonClickListener('findmeButton', 'findme');
+addButtonClickListener('avarButton', 'mavata');
+addButtonClickListener('aboutButton', 'aboutme');
+
+addButtonClickListener('minimizecurvitae', 'curvitae');
+addButtonClickListener('minimizeterminal', 'term');
+addButtonClickListener('minimizefindme', 'findme');
+addButtonClickListener('minimizemyavatar', 'mavata');
+addButtonClickListener('minimizeaboutme', 'aboutme');
+
+addButtonClickListener('closecurvitae', 'curvitae');
+addButtonClickListener('closeterminal', 'term');
+addButtonClickListener('closefindme', 'findme');
+addButtonClickListener('closemyavatar', 'mavata');
+addButtonClickListener('closeaboutme', 'aboutme');
+
+//Terminal Output
+const inputField = document.getElementById('terminal-input-field');
+const output = document.querySelector('.terminal-output');
+
+inputField.addEventListener('keydown', function(event) {
+  if (event.key === "Enter") {
+    const input = inputField.value;
+    inputField.value = '';
+    output.innerHTML += `<div>$ <span class="input-text">${input}</span></div>`;
+
+    if (input === "reset") {
+      output.innerHTML = '';
+    } 
+    else if (input === "start") {
+      const text = "Hello and welcome to DragOS";
+      let i = 0;
+      const interval = setInterval(function() {
+        if (i >= text.length) {
+          clearInterval(interval);
+          output.innerHTML += "<br>";
+          output.scrollTop = output.scrollHeight; 
+        } else {
+          output.innerHTML += text.charAt(i);
+          i++;
+        }
+      }, Math.floor(Math.random() * 90) + 10);
+    }
+    else if (input === "help") {
+      output.innerHTML += `
+        <div>reset -- Clears the terminal output</div>
+        <div>start -- Displays welcome message with a typing animation</div>
+        <div>load -- Displays a loading animation</div>
+        <div>help -- Displays this help message</div>
+        <div></div>
+      `;
+    }
+    else if (input === "load") {
+      let i = 0;
+      const interval = setInterval(function() {
+        const loadingText = "Loading" + ".".repeat((i % 3) + 1);
+        output.innerHTML = `<div>${loadingText}</div>`;
+        i++;
+        if (i >= 12) { 
+          clearInterval(interval);
+          output.innerHTML = 'Loading loaded and executed succesfully'; 
+        }
+      }, 700); 
+    }
+    else {
+      output.scrollTop = output.scrollHeight; 
+    }
+  }
+});
+
+
+
+  </script> 
+</html>

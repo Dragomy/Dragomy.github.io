@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dragomy's Site</title>
+    <link rel="icon" type="image/x-icon" href="https://Dragomy.github.io/assets/img/avatar.png">
+    <style>
+            *{ 
+text-decoration: none;
+color: white;
+border-color: white;
+}
+body {
+text-decoration: none; 
+font-family: Arial;
+padding: 2%;
+background: black;
+font-family: Monospace, Arial, sans-serif;
+}
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {  
+float: left;
+width: 19%;
+background-color:rgba(0, 0, 0, 0);
+padding-left: 0px;
+}
+/* Right column */
+.rightcolumn {
+float: right;
+width: 80%;
+}
+/* Fake image */
+.fakeimg {
+background-color: #aaa;
+width: 100%;
+padding: 20px;
+}
+/* Add a card effect for articles */
+.card {
+overflow: hidden;
+background-color: black;
+color: white;
+padding: 20px;
+margin-top: 20px;
+border-color: white;
+box-shadow:
+0 0 5px 1px #fff,  /* inner white */
+0 0 10px 2px #f0f, /* middle magenta */
+0 0 15px 1px #0ff; /* outer cyan */
+border-style: solid;
+}
+/* Clear floats after the columns */
+.row::after {
+content: "";
+display: table;
+clear: both;
+}
+/* Footer */
+.footer {
+padding: 20px;
+text-align: center;
+background: black;
+color: white;
+margin-top: 20px;
+}
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+.leftcolumn, .rightcolumn {   
+width: 100%;
+}
+}
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+.topnav a {
+float: none;
+width: 100%;
+}
+}
+.element {
+border-style: solid;
+border-color: purple;
+float: left;
+display: block;
+margin: 1%;
+width: 200px;
+height:200px;
+background-color: purple;
+border-radius:10px;
+}
+.element:hover {
+border-radius:0px;
+border-color: white;
+background-color:white;
+}
+.element:hover .text{
+border-radius:0px;
+border-color: white;
+color:black;
+background-color:white;
+}
+.text{
+margin:5px;
+}
+.styled-button{
+background-color:black;
+border-color:purple;
+}
+.styled-button:hover{
+background-color:black;
+border-color:white;
+}
+
+    </style>
+  </head>
+  <body>
+    <div class="row">
+        <div class="leftcolumn">
+           <div class="card">
+              <h2>About Me</h2>
+              <hr>
+              <img id="avatarImg" src="https://dragomy.github.io/assets/MyAvatar(Dragomy).jpg" width="300" height="300">
+              <p>I'm what some may affectionately call a computer science nerd..</p>
+              <p>Currently, I'm a student residing and studying in Germany, I aim to archieve my Abitur next year.</p>
+              <p>Programming is among my passions, and I've dabbled in a variety of tools and languages.</p>
+              <p>Presently, my primary interests lie in data science, game design, and web development.</p>
+              <p>Outside of my tech pursuits, I enjoy assembling PCs, exploring design and art (even though I'm not particularly skilled), constructing with building blocks such as Legos (simply known as "Klemmbausteine" in German), cycling, and more.</p>
+              <p></p>
+              <p></p>
+              <p></p>
+              <a href="https://dragomy.github.io/PC/CurriculumVitae.html">
+                <button class="styled-button"> <h3> See full Curriculum Vitae</h3></button>
+              </a>
+           </div>
+           <div class="card">
+              <h2>Contact Me</h2>
+              <hr>
+              <a href="https://stackoverflow.com/users/20522304/dragomy">
+                 <p class= "WaI">Stack Overflow</p>
+              </a>
+              <a href="https://github.com/Dragomy">
+                 <p class= "WaI">GitHub</p>
+              </a>
+             <a href="">
+                 <p class= "WaI">dragomy1.02(at)gmail(dot)com</p>
+              </a>
+              
+           </div>
+        </div>
+        <div class="rightcolumn">
+           <div class="card">
+              <h2>Welcome, Visitor!</h2>
+              <hr>
+              <p>This website serves as a complementary addition to my curriculum vitae and may also be included as an additional attachment in application emails, which could be how you discovered it.</p>
+              <p>Created entirely during my free time, this page is hosted at no cost thanks to GitHub.</p>
+              <p>If you enjoy the content, consider revisiting occasionally, even if updates may be infrequent for several months.</p>
+              <p>If you're viewing this on a mobile device and experience redirection issues, it may be due to compatibility issues, particularly with Apple devices.</p>
+              <p>If the layout appears unusual on a desktop platform, something may have gone awry—though it shouldn't have. </p>
+              <p>This webpage was crafted and fine-tuned on and for screens with a resolution of 1920 pixels by 1080 pixels on desktop and laptop devices, and has been tested exclusively in Firefox.</p>
+           </div>
+           <div class="card">
+              <h2>Publications</h2>
+              <hr>
+              <div class="showcase">
+                 <div class="element">
+                    <a href="https://dragomy.itch.io/godot-4-voxel-test">
+                    <img src="https://img.itch.zone/aW1nLzE1MTkzMTQ3LnBuZw==/315x250%23c/h3xlbv.png" width="100%" height="auto">
+                    </a>
+                    <div class="text">Godot4 VoxelTest</div>
+                 </div>
+                 <div class="element">
+                    <a href="https://dragomy.itch.io/small-voxel-asset-pack">
+                    <img src="https://img.itch.zone/aW1nLzE1MTkxMzI1LnBuZw==/315x250%23c/gnEJCs.png" width="100%" height="auto">
+                    </a>
+                    <div class="text">Small Voxel Assets Pack</div>
+                 </div>
+                 <div class="element">
+                    <a href="https://www.youtube.com/watch?v=cP7hhtCGtb4">
+                    <img src="https://dragomy.github.io/assets/VoxelThumbnail.png" width="100%" height="auto">
+                    </a>
+                    <div class="text">Exploring Voxels using Godot 4 (Video)</div>
+                 </div>
+              </div>
+           </div>
+           <div class="card">
+              <h2>Hobbies</h2>
+              <hr>
+              <h3>PC Building</h3>
+              <p>I've planned and assembled seven PCs for both myself, friends and family.</p>
+              <p>I have a penchant for repurposing old components; in fact, my latest project—a small server—incorporates old hard drives donated by a friend and the CPU from another.</p>
+              <p>While my primary PC currently runs on Windows, I'm proficient with Linux and have already made the switch on my laptop (Debian) and server (Proxmox with several Linux VMs).</p>
+              <img src="https://dragomy.github.io/assets/labtop_desktop_img.png" width="20%" height="auto">
+              <p>Here's a glimpse of my Debian-powered laptop with XFCE.</p>
+              <h3>Programming</h3>
+              <p>I initially delved into programming with Godot because I aspired to create games. However, my journey expanded when I immersed myself in PC building and explored various facets of the vast IT realm.</p>
+              <p>At present, I'm deeply engrossed in the realms of Data Science and Data Analysis.</p>
+              <h3>Reading</h3>
+              <p>Among German authors, Walter Moers stands as my favorite.</p>
+              <p>Choosing a favorite from his works is challenging, but "Die Stadt der Träumenden Bücher" holds a special place in my heart.</p>
+           </div>
+        </div>
+     </div>
+     <div class="footer">
+        <hr>
+        <img src="https://dragomy.github.io/assets/prideflag.png" width="10%" height="5%">
+        <img src="https://dragomy.github.io/assets/blacklivesmatter.png" width="5%" height="5%">
+        <p>Be supportive!</p>
+        <hr>
+        <h3>This page was last updated on: 03/04/2024</h3>
+     </div>
+     
+  </body>
+  <script>
+        
+  </script> 
+</html>
