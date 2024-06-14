@@ -1,0 +1,23 @@
+body {
+  background-image: url("https://dragomy.github.io/assets/bg_anim.gif");
+  background-repeat: repeat;
+  background-size: 25vh; 
+  background-color: black;
+  text-align: center;
+  color: white;
+  font-size: 200%;
+  font-family: Arial, sans-serif;
+}
+
+.a{
+  background-color: black;
+  margin: 3vw;
+}
+
+#email-image{
+  width: 50vw;
+}
+
+#b{
+  height:20vh;
+}

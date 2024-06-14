@@ -1,46 +1,49 @@
-*{
+* {
   background-color: #1E1E1E;
   color: #B191BD;
   font-family: Monospace, Arial, sans-serif;
 }
 
-.card{
+.card {
   position: relative;
   border-style: solid;
   margin: 1vh;
   padding: 0.5vw;
 }
-.card:hover{
+
+.card:hover {
   color: #AD7CA4;
 }
 
-#leftcolumn{
+#leftcolumn {
   float: left;
   width: 19%;
 }
-#rightcolumn{
+
+#rightcolumn {
   float: right;
   width: 80%;
 }
 
-.image{
+.image {
   border-radius: 2px;
   margin: 1%;
-  width: 98% ;
+  width: 98%;
   height: 98%;
 }
 
 .button {
   border-radius: 2px;
-  margin:1%;
+  margin: 1%;
   width: 100%;
-  background-color: #B191BD; 
+  background-color: #B191BD;
   border: none;
   color: #1E1E1E;
   text-align: center;
   font-size: 16px;
   padding: 1%;
 }
+
 .button:hover {
   border-radius: 4px;
   background-color: #AD7CA4;
@@ -48,19 +51,20 @@
 
 .button2 {
   border-radius: 2px;
-  margin:0.25%;
+  margin: 0.25%;
   width: 98%;
-  background-color: #B191BD; 
+  background-color: #B191BD;
   border: none;
   color: #1E1E1E;
   font-size: 16px;
 }
+
 .button2:hover {
   border-radius: 4px;
   background-color: #AD7CA4;
 }
 
-#bottomcolumn{
+#bottomcolumn {
   padding: 20px;
   text-align: center;
   color: white;
@@ -68,15 +72,15 @@
 }
 
 .Top::after {
-content: "";
-display: table;
-clear: both;
+  content: "";
+  display: table;
+  clear: both;
 }
 
-#DebianLabtop{
+#DebianLabtop {
   width: 40%;
 }
 
-#Server{
-   width: 30%;
+#Server {
+  width: 30%;
 }

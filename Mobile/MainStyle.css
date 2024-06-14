@@ -1,23 +1,55 @@
-body {
-  background-image: url("https://dragomy.github.io/assets/bg_anim.gif");
-  background-repeat: repeat;
-  background-size: 25vh; 
-  background-color: black;
+* {
+  background-color: #1E1E1E;
+  color: #B191BD;
+  font-family: Monospace, Arial, sans-serif;
+}
+
+.frame {
+  border-style: solid;
+  width: 99%;
   text-align: center;
-  color: white;
-  font-size: 200%;
-  font-family: Arial, sans-serif;
 }
 
-.a{
-  background-color: black;
-  margin: 3vw;
+.image {
+  border-style: solid;
+  margin: 10px;
+  width: 94%;
 }
 
-#email-image{
-  width: 50vw;
+
+.button {
+  border-radius: 2px;
+  margin: 1%;
+  width: 94%;
+  background-color: #B191BD;
+  border: none;
+  color: #1E1E1E;
+  text-align: center;
+  font-size: 16px;
+  padding: 1%;
 }
 
-#b{
-  height:20vh;
+.button:hover {
+  border-radius: 4px;
+  background-color: #AD7CA4;
+}
+
+.card {
+  margin: 10px;
+}
+
+
+.button2 {
+  border-radius: 2px;
+  margin: 0.25%;
+  width: 98%;
+  background-color: #B191BD;
+  border: none;
+  color: #1E1E1E;
+  font-size: 16px;
+}
+
+.button2:hover {
+  border-radius: 4px;
+  background-color: #AD7CA4;
 }

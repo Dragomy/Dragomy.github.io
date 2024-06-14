@@ -1,424 +1,471 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Dragomy's Site</title>
-    <link rel="icon" type="image/x-icon" href="https://Dragomy.github.io/assets/img/avatar.png">
-    <style>
-            body {
-margin: 0;
-overflow: hidden;
-background-color:black;
-color:white;
-}
 
-.rectangle{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  box-shadow:
-    0 0 5px 1px #fff,  /* inner white */
-    0 0 10px 2px #f0f, /* middle magenta */
-    0 0 15px 3px #0ff; /* outer cyan */
-  border-style: solid;
-}
+<head>
+  <title>Dragomy's Site</title>
+  <link rel="icon" type="image/x-icon" href="https://Dragomy.github.io/assets/img/avatar.png">
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+      background-color: black;
+      color: white;
+    }
 
-#rectangle {
-  width: 90vw;
-  height: 90vh;
-}
-#rectangle1 {
-  width: 80vw;
-  height: 80vh;
-}
-#rectangle2 {
-  width: 70vw;
-  height: 70vh;
-}
-#rectangle3 {
-  width: 60vw;
-  height: 60vh;
-}
-#rectangle4 {
-  width: 50vw;
-  height: 50vh;
-}
-#rectangle5 {
-  width: 40vw;
-  height: 40vh;
-  background-color:black;
-}
+    .rectangle {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      box-shadow:
+        0 0 5px 1px #fff,
+        /* inner white */
+        0 0 10px 2px #f0f,
+        /* middle magenta */
+        0 0 15px 3px #0ff;
+      /* outer cyan */
+      border-style: solid;
+    }
 
-#lines{
-  filter: drop-shadow(
-    0px 2px 5px #f0f
-  );
-}
+    #rectangle {
+      width: 90vw;
+      height: 90vh;
+    }
 
-#about-me{
-  position: absolute;
-  bottom: 2%;
-  right: 2%;
-  color: white;
-  width: 30vw;
-  height: 50vh;
-  border-style: solid;
-  background-color:black;
-  overflow: hidden;
-  box-shadow:
-    0 0 5px 1px #fff,  /* inner white */
-    0 0 10px 2px #f0f, /* middle magenta */
-    0 0 15px 3px #0ff; /* outer cyan */
-}
+    #rectangle1 {
+      width: 80vw;
+      height: 80vh;
+    }
 
-.WaI{ 
-  transform-origin: center;
-  user-select: none;
-  text-shadow: 1.2px -1.2px gray;
-  margin:10px;
-}
+    #rectangle2 {
+      width: 70vw;
+      height: 70vh;
+    }
 
-.styled-button {
-  /*I like Comic Sans #freeComicSans*/
-  font-family: 'Comic Sans MS';
-  
-  width:100%;
-  height:auto;
-  font-size: 30px; 
-  text-decoration: underline; 
-  border: none;
-  background-color: black; 
-  color: white;
-  cursor: pointer;
-}
-.styled-button:hover {
-  color: #765898; 
-}
-.styled-button:active {
-  color: #0ff; 
-}
+    #rectangle3 {
+      width: 60vw;
+      height: 60vh;
+    }
 
-#welcome{
-  position: absolute;
-  top: 2%;
-  left: 2%;
-  width: 8vw;
-  height: 95vh;
-  color: white;
-  background-color:black;
-  box-shadow:
-    0 0 5px 1px #fff,  /* inner white */
-    0 0 10px 2px #f0f, /* middle magenta */
-    0 0 15px 3px #0ff; /* outer cyan */
-  border-style: solid;
-  overflow:hidden;
-}
+    #rectangle4 {
+      width: 50vw;
+      height: 50vh;
+    }
 
-#welcome-text{
-  position: relative;
-  bottom:-60vh;
-  rotate:270deg;
-  color:white;
-  font-size: 10vw; 
-}
+    #rectangle5 {
+      width: 40vw;
+      height: 40vh;
+      background-color: black;
+    }
 
-/* Specific Style */
-.hobbies {
-  display: inline-block;
-  position: absolute;
-  left: 13vw;
-  top: 3vh;
-  width: 10vw;
-  height: 20vh;
-  background-color: #efedde;
-  border: 3px solid #765898;
-  box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.75);
-  overflow: hidden;
-  margin: 0 auto;
-}
-.myAvatar {
-  display: inline-block;
-  position: absolute;
-  top: 2%;
-  right: 2%;
-  width: 30vw;
-  height: 40vh;
-  background-color: black;
-  border: 3px solid #765898;
-  box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.75);
-  overflow: hidden;
-  margin: 0 auto;
-}
-/* All window styles */
-.window-header {
-  position: relative;
-  height: 30px;
-  background-color: #765898;
-  color: #fff;
-  font-size: 14px;
-  font-weight: bold;
-  padding: 0 6px;
-  line-height: 30px;
-}
-.icon-Image{
-  width: 15px;
-  height: 15px;
-}
-.window-buttons {
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-.window-buttons button {
-  display: inline-block;
-  width: 30px;
-  height: 30px;
-  background-color: transparent;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-.window-buttons .close {
-  background-image: url('https://img.icons8.com/windows/32/000000/close-window.png');
-}
-.window-buttons .maximize {
-  background-image: url('https://img.icons8.com/windows/32/000000/maximize-window.png');
-}
-.window-buttons .minimize {
-  background-image: url('https://img.icons8.com/windows/32/000000/minimize-window.png');
-}
-.window-content {
-  position: relative;
-  width: 100%;
-  height: calc(100% - 30px);
-  overflow: auto;
-  padding: 16px;
-}
-.win {
-  font-family: "Segoe UI", Tahoma, sans-serif;
-   padding: 9px;
-}
+    #lines {
+      filter: drop-shadow(0px 2px 5px #f0f);
+    }
 
-/* WordPad - CurriculumVitae */
-.wp-window {
-  display: inline-block;
-  position: relative;
-  width: 900px;
-  height: 750px;
-  top: 3vh;
-  left: 5vw;
-  background-color: #efedde;
-  border: 3px solid #765898;
-  box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.75);
-  overflow: hidden;
-  margin: 0 auto;
-  color:black;
-}
-.wp-window-header {
-  position: relative;
-  height: 30px;
-  background-color: #765898;
-  color: #fff;
-  font-size: 14px;
-  font-weight: bold;
-  padding: 0 6px;
-  line-height: 30px;
-}
-.wp-window-content {
-  position: relative;
-  width: 100%;
-  height: calc(100% - 30px);
-  overflow: auto;
-  
-}
-.wp-helpbar {
-  background-color: #ece9d8;
-  width: 894px;
-  height: 20px;
-  border: 2px solid #cccac1;
-  box-shadow: 0px 0px 1px 1px rgba(255,255,255,0.75);
-  margin: 0 auto;
-}
-.wp-toolbar {
-  background-color: #ece9d8;
-  width: 894px;
-  height: 25px;
-  border: 2px solid #cccac1;
-  box-shadow: 0px 0px 1px 1px rgba(255,255,255,0.75);
-  margin: 0 auto;
-}
-.wp-texttools {
-  background-color: #ece9d8;
-  width: 894px;
-  height: 25px;
-  border: 2px solid #cccac1;
-  box-shadow: 0px 0px 1px 1px rgba(255,255,255,0.75);
-  margin: 0 auto;
-  display: flex;
-}
-.wp-font {
-  position: relative;
-  background-color: #fff;
-  width: 100px;
-  height: 18px;
-  border: 2px solid #9bb1c2;
-  box-shadow: 0px 0px 1px 1px rgba(255,255,255,0.75);
-  margin: 0 auto;
-  margin-left: 5px;
-}
-.wp-scale {
-  position: absolute;
-  background-color: #fff;
-  width: 60px;
-  height: 18px;
-  border: 2px solid #9bb1c2;
-  box-shadow: 0px 0px 1px 1px rgba(255,255,255,0.75);
-  margin-left: 130px;
-}
-.wp-style {
-  position: absolute;
-  background-color: #fff;
-  width: 80px;
-  height: 18px;
-  border: 2px solid #9bb1c2;
-  box-shadow: 0px 0px 1px 1px rgba(255,255,255,0.75);
-  margin: 0 auto;
-  margin-left: 214px;
-}
-.wp-innersc {
-  position: absolute;
-  background-color: #fff;
-  width: 895px ;
-  height: 18px;
-  border: 2px solid #000;
-  box-shadow: 0px 0px 1px 1px rgba(255,255,255,0.75);
-  margin: 0 auto;
-  overflow: hidden;
-}
-.wp-paper {
-  background-color: #fff;
-  width: 885px;
-  height: 170%;
-  border: 2px solid #cccac1;
-  box-shadow: 0px 0px 1px 1px rgba(255,255,255,0.75);
-  margin: 0 auto;
-}
-.wp-text {
-  margin-right: 10px;
-}
-/* In window styles */
-.hobby-buttons{
-  font-family: 'Comic Sans MS';
-  background-color: transparent;
-  border: none;
-  font-size: 2vh; 
-   color: black;
-  cursor: pointer;
-}
+    #about-me {
+      position: absolute;
+      bottom: 2%;
+      right: 2%;
+      color: white;
+      width: 30vw;
+      height: 50vh;
+      border-style: solid;
+      background-color: black;
+      overflow: hidden;
+      box-shadow:
+        0 0 5px 1px #fff,
+        /* inner white */
+        0 0 10px 2px #f0f,
+        /* middle magenta */
+        0 0 15px 3px #0ff;
+      /* outer cyan */
+    }
 
+    .WaI {
+      transform-origin: center;
+      user-select: none;
+      text-shadow: 1.2px -1.2px gray;
+      margin: 10px;
+    }
 
-   
- 
-    </style>
-  </head>
-  <body>
-    <div id="container">
-        <div id="lines" style="position: relative;">
-        <!-- Line from top left to bottom left -->
-         <svg id="lines" width="100vw" height="100vh" xmlns="http://www.w3.org/2000/svg" style="position: absolute; top: 0; left: 0;">
-          <line x1="0" y1="0" x2="100%" y2="100%" stroke="white" stroke-width="3" />
-        </svg>
-        <!-- line from bottom left to top right -->
-         <svg id="lines" width="100vw" height="100vh" xmlns="http://www.w3.org/2000/svg" style="position: absolute; top: 0; left: 0;">
-          <line x1="0%" y1="100%" x2="100%" y2="0%" stroke="white" stroke-width="3" />
-        </svg>
-        <!-- middle left right -->
-         <svg id="lines" width="100vw" height="100vh" xmlns="http://www.w3.org/2000/svg" style="position: absolute; top: 0; left: 0;">
-          <line x1="0%" y1="50%" x2="100%" y2="50%" stroke="white" stroke-width="3" />
-        </svg>
-        <!-- middle top bottom -->
-         <svg id="lines" width="100vw" height="100vh" xmlns="http://www.w3.org/2000/svg" style="position: absolute; top: 0; left: 0;">
-          <line x1="50%" y1="0%" x2="50%" y2="100%" stroke="white" stroke-width="3" />
-        </svg>
-        <!-- from x 25 to x 75 -->
-         <svg id="lines" width="100vw" height="100vh" xmlns="http://www.w3.org/2000/svg" style="position: absolute; top: 0; left: 0;">
-          <line x1="0%" y1="25%" x2="100%" y2="75%" stroke="white" stroke-width="3" />
-        </svg>
-        <!-- from x 75 to x 25 -->
-         <svg id="lines" width="100vw" height="100vh" xmlns="http://www.w3.org/2000/svg" style="position: absolute; top: 0; left: 0;">
-          <line x1="0%" y1="75%" x2="100%" y2="25%" stroke="white" stroke-width="3" />
-        </svg>
-        <!-- from y 25 to y 75 -->
-         <svg id="lines" width="100vw" height="100vh" xmlns="http://www.w3.org/2000/svg" style="position: absolute; top: 0; left: 0;">
-          <line x1="25%" y1="0%" x2="75%" y2="100%" stroke="white" stroke-width="3" />
-        </svg>
-        <!-- from y 75 to y 25 -->
-         <svg id="lines" width="100vw" height="100vh" xmlns="http://www.w3.org/2000/svg" style="position: absolute; top: 0; left: 0;">
-          <line x1="75%" y1="0%" x2="25%" y2="100%" stroke="white" stroke-width="3" />
-        </svg>
-        
-      </div>
-        <div id="rectangle" class="rectangle">
-         <div id="rectangle1" class="rectangle">
+    .styled-button {
+      /*I like Comic Sans #freeComicSans*/
+      font-family: 'Comic Sans MS';
+
+      width: 100%;
+      height: auto;
+      font-size: 30px;
+      text-decoration: underline;
+      border: none;
+      background-color: black;
+      color: white;
+      cursor: pointer;
+    }
+
+    .styled-button:hover {
+      color: #765898;
+    }
+
+    .styled-button:active {
+      color: #0ff;
+    }
+
+    #welcome {
+      position: absolute;
+      top: 2%;
+      left: 2%;
+      width: 8vw;
+      height: 95vh;
+      color: white;
+      background-color: black;
+      box-shadow:
+        0 0 5px 1px #fff,
+        /* inner white */
+        0 0 10px 2px #f0f,
+        /* middle magenta */
+        0 0 15px 3px #0ff;
+      /* outer cyan */
+      border-style: solid;
+      overflow: hidden;
+    }
+
+    #welcome-text {
+      position: relative;
+      bottom: -60vh;
+      rotate: 270deg;
+      color: white;
+      font-size: 10vw;
+    }
+
+    /* Specific Style */
+    .hobbies {
+      display: inline-block;
+      position: absolute;
+      left: 13vw;
+      top: 3vh;
+      width: 10vw;
+      height: 20vh;
+      background-color: #efedde;
+      border: 3px solid #765898;
+      box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.75);
+      overflow: hidden;
+      margin: 0 auto;
+    }
+
+    .myAvatar {
+      display: inline-block;
+      position: absolute;
+      top: 2%;
+      right: 2%;
+      width: 30vw;
+      height: 40vh;
+      background-color: black;
+      border: 3px solid #765898;
+      box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.75);
+      overflow: hidden;
+      margin: 0 auto;
+    }
+
+    /* All window styles */
+    .window-header {
+      position: relative;
+      height: 30px;
+      background-color: #765898;
+      color: #fff;
+      font-size: 14px;
+      font-weight: bold;
+      padding: 0 6px;
+      line-height: 30px;
+    }
+
+    .icon-Image {
+      width: 15px;
+      height: 15px;
+    }
+
+    .window-buttons {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+
+    .window-buttons button {
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      background-color: transparent;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+
+    .window-buttons .close {
+      background-image: url('https://img.icons8.com/windows/32/000000/close-window.png');
+    }
+
+    .window-buttons .maximize {
+      background-image: url('https://img.icons8.com/windows/32/000000/maximize-window.png');
+    }
+
+    .window-buttons .minimize {
+      background-image: url('https://img.icons8.com/windows/32/000000/minimize-window.png');
+    }
+
+    .window-content {
+      position: relative;
+      width: 100%;
+      height: calc(100% - 30px);
+      overflow: auto;
+      padding: 16px;
+    }
+
+    .win {
+      font-family: "Segoe UI", Tahoma, sans-serif;
+      padding: 9px;
+    }
+
+    /* WordPad - CurriculumVitae */
+    .wp-window {
+      display: inline-block;
+      position: relative;
+      width: 900px;
+      height: 750px;
+      top: 3vh;
+      left: 5vw;
+      background-color: #efedde;
+      border: 3px solid #765898;
+      box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.75);
+      overflow: hidden;
+      margin: 0 auto;
+      color: black;
+    }
+
+    .wp-window-header {
+      position: relative;
+      height: 30px;
+      background-color: #765898;
+      color: #fff;
+      font-size: 14px;
+      font-weight: bold;
+      padding: 0 6px;
+      line-height: 30px;
+    }
+
+    .wp-window-content {
+      position: relative;
+      width: 100%;
+      height: calc(100% - 30px);
+      overflow: auto;
+
+    }
+
+    .wp-helpbar {
+      background-color: #ece9d8;
+      width: 894px;
+      height: 20px;
+      border: 2px solid #cccac1;
+      box-shadow: 0px 0px 1px 1px rgba(255, 255, 255, 0.75);
+      margin: 0 auto;
+    }
+
+    .wp-toolbar {
+      background-color: #ece9d8;
+      width: 894px;
+      height: 25px;
+      border: 2px solid #cccac1;
+      box-shadow: 0px 0px 1px 1px rgba(255, 255, 255, 0.75);
+      margin: 0 auto;
+    }
+
+    .wp-texttools {
+      background-color: #ece9d8;
+      width: 894px;
+      height: 25px;
+      border: 2px solid #cccac1;
+      box-shadow: 0px 0px 1px 1px rgba(255, 255, 255, 0.75);
+      margin: 0 auto;
+      display: flex;
+    }
+
+    .wp-font {
+      position: relative;
+      background-color: #fff;
+      width: 100px;
+      height: 18px;
+      border: 2px solid #9bb1c2;
+      box-shadow: 0px 0px 1px 1px rgba(255, 255, 255, 0.75);
+      margin: 0 auto;
+      margin-left: 5px;
+    }
+
+    .wp-scale {
+      position: absolute;
+      background-color: #fff;
+      width: 60px;
+      height: 18px;
+      border: 2px solid #9bb1c2;
+      box-shadow: 0px 0px 1px 1px rgba(255, 255, 255, 0.75);
+      margin-left: 130px;
+    }
+
+    .wp-style {
+      position: absolute;
+      background-color: #fff;
+      width: 80px;
+      height: 18px;
+      border: 2px solid #9bb1c2;
+      box-shadow: 0px 0px 1px 1px rgba(255, 255, 255, 0.75);
+      margin: 0 auto;
+      margin-left: 214px;
+    }
+
+    .wp-innersc {
+      position: absolute;
+      background-color: #fff;
+      width: 895px;
+      height: 18px;
+      border: 2px solid #000;
+      box-shadow: 0px 0px 1px 1px rgba(255, 255, 255, 0.75);
+      margin: 0 auto;
+      overflow: hidden;
+    }
+
+    .wp-paper {
+      background-color: #fff;
+      width: 885px;
+      height: 170%;
+      border: 2px solid #cccac1;
+      box-shadow: 0px 0px 1px 1px rgba(255, 255, 255, 0.75);
+      margin: 0 auto;
+    }
+
+    .wp-text {
+      margin-right: 10px;
+    }
+
+    /* In window styles */
+    .hobby-buttons {
+      font-family: 'Comic Sans MS';
+      background-color: transparent;
+      border: none;
+      font-size: 2vh;
+      color: black;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="container">
+    <div id="lines" style="position: relative;">
+      <!-- Line from top left to bottom left -->
+      <svg id="lines" width="100vw" height="100vh" xmlns="http://www.w3.org/2000/svg"
+        style="position: absolute; top: 0; left: 0;">
+        <line x1="0" y1="0" x2="100%" y2="100%" stroke="white" stroke-width="3" />
+      </svg>
+      <!-- line from bottom left to top right -->
+      <svg id="lines" width="100vw" height="100vh" xmlns="http://www.w3.org/2000/svg"
+        style="position: absolute; top: 0; left: 0;">
+        <line x1="0%" y1="100%" x2="100%" y2="0%" stroke="white" stroke-width="3" />
+      </svg>
+      <!-- middle left right -->
+      <svg id="lines" width="100vw" height="100vh" xmlns="http://www.w3.org/2000/svg"
+        style="position: absolute; top: 0; left: 0;">
+        <line x1="0%" y1="50%" x2="100%" y2="50%" stroke="white" stroke-width="3" />
+      </svg>
+      <!-- middle top bottom -->
+      <svg id="lines" width="100vw" height="100vh" xmlns="http://www.w3.org/2000/svg"
+        style="position: absolute; top: 0; left: 0;">
+        <line x1="50%" y1="0%" x2="50%" y2="100%" stroke="white" stroke-width="3" />
+      </svg>
+      <!-- from x 25 to x 75 -->
+      <svg id="lines" width="100vw" height="100vh" xmlns="http://www.w3.org/2000/svg"
+        style="position: absolute; top: 0; left: 0;">
+        <line x1="0%" y1="25%" x2="100%" y2="75%" stroke="white" stroke-width="3" />
+      </svg>
+      <!-- from x 75 to x 25 -->
+      <svg id="lines" width="100vw" height="100vh" xmlns="http://www.w3.org/2000/svg"
+        style="position: absolute; top: 0; left: 0;">
+        <line x1="0%" y1="75%" x2="100%" y2="25%" stroke="white" stroke-width="3" />
+      </svg>
+      <!-- from y 25 to y 75 -->
+      <svg id="lines" width="100vw" height="100vh" xmlns="http://www.w3.org/2000/svg"
+        style="position: absolute; top: 0; left: 0;">
+        <line x1="25%" y1="0%" x2="75%" y2="100%" stroke="white" stroke-width="3" />
+      </svg>
+      <!-- from y 75 to y 25 -->
+      <svg id="lines" width="100vw" height="100vh" xmlns="http://www.w3.org/2000/svg"
+        style="position: absolute; top: 0; left: 0;">
+        <line x1="75%" y1="0%" x2="25%" y2="100%" stroke="white" stroke-width="3" />
+      </svg>
+
+    </div>
+    <div id="rectangle" class="rectangle">
+      <div id="rectangle1" class="rectangle">
+        <div id="rectangle2" class="rectangle">
           <div id="rectangle2" class="rectangle">
-           <div id="rectangle2" class="rectangle">
             <div id="rectangle3" class="rectangle">
-             <div id="rectangle4" class="rectangle">
-              <div id="rectangle5" class="rectangle">
-               
+              <div id="rectangle4" class="rectangle">
+                <div id="rectangle5" class="rectangle">
+
+                </div>
               </div>
-             </div>
             </div>
-           </div>
           </div>
-         </div>
-       </div>
-        <div id="about-me">
-          <h1 class= "WaI"> Hello!</h1>
-          <h2 class= "WaI"> Welcome to this website</h2>
-          <hr class= "WaI"></hr>
-        <p class="WaI"> I'm a student currently living in Germany. Programming being one of my hobbies, I've tipped my toe in a variety of tools and languages such as Java, GDScript (HTML, CSS, and JS), Python and C#. At the moment, I am mostly interested in web development (mostly frontend) and deep learning technology, especially when it comes to picture-generating algorithms like Stable Diffusion and data science. </p>
-        <hr class= "WaI"></hr>
-           <button class="styled-button" id="CurViButton">See full Curriculum Vitae</button>
-        </div>
-        <div id="welcome">
-          <h1 id= "welcome-text" > Welcome </h1>
-        </div>
-      <!--  Windows -->
-        <div class="hobbies" id="myWindow">
-        <div class="window-header">
-          <span>Hobbies</span>
-          <div class="window-buttons">
-            <button class="minimize"></button>
-            <button class="maximize"></button>
-            <button class="close"></button>
-          </div>
-        </div>
-        <div class="window-content">
-          <button class="hobby-buttons">LEGO,</button>
-          <button class="hobby-buttons">Programming,</button>
-          <button class="hobby-buttons">Cycling,</button>
         </div>
       </div>
-        <div class="myAvatar" id="myWindow">
-        <div class="window-header">
-          <span>My Avatar</span>
-          <div class="window-buttons">
-            <button class="minimize"></button>
-            <button class="maximize"></button>
-            <button class="close"></button>
-          </div>
-        </div>
-        <div class="window-content">
-          
+    </div>
+    <div id="about-me">
+      <h1 class="WaI"> Hello!</h1>
+      <h2 class="WaI"> Welcome to this website</h2>
+      <hr class="WaI">
+      </hr>
+      <p class="WaI"> I'm a student currently living in Germany. Programming being one of my hobbies, I've tipped my toe
+        in a variety of tools and languages such as Java, GDScript (HTML, CSS, and JS), Python and C#. At the moment, I
+        am mostly interested in web development (mostly frontend) and deep learning technology, especially when it comes
+        to picture-generating algorithms like Stable Diffusion and data science. </p>
+      <hr class="WaI">
+      </hr>
+      <button class="styled-button" id="CurViButton">See full Curriculum Vitae</button>
+    </div>
+    <div id="welcome">
+      <h1 id="welcome-text"> Welcome </h1>
+    </div>
+    <!--  Windows -->
+    <div class="hobbies" id="myWindow">
+      <div class="window-header">
+        <span>Hobbies</span>
+        <div class="window-buttons">
+          <button class="minimize"></button>
+          <button class="maximize"></button>
+          <button class="close"></button>
         </div>
       </div>
-      <!-- Wordpad Window -->
-      <div id="CurriculumVitae" style="display: none;">
-      <div class="wp-window" >
+      <div class="window-content">
+        <button class="hobby-buttons">LEGO,</button>
+        <button class="hobby-buttons">Programming,</button>
+        <button class="hobby-buttons">Cycling,</button>
+      </div>
+    </div>
+    <div class="myAvatar" id="myWindow">
+      <div class="window-header">
+        <span>My Avatar</span>
+        <div class="window-buttons">
+          <button class="minimize"></button>
+          <button class="maximize"></button>
+          <button class="close"></button>
+        </div>
+      </div>
+      <div class="window-content">
+
+      </div>
+    </div>
+    <!-- Wordpad Window -->
+    <div id="CurriculumVitae" style="display: none;">
+      <div class="wp-window">
         <div class="wp-window-header">
           <span>Document - WordPad</span>
           <div class="window-buttons">
@@ -429,31 +476,31 @@ color:white;
         </div>
         <div class="wp-window-content">
           <div class="wp-helpbar">
-            <h>  File   Edit   View   Insert   Format   Help  </h>
+            <h> File Edit View Insert Format Help </h>
           </div>
-           <div class="wp-toolbar">
-              <h> 📄 📂 💾 🖨️ 🔍 🔭 ✂️ 📑 📙 ↩️ 🗓️ </h>
+          <div class="wp-toolbar">
+            <h> 📄 📂 💾 🖨️ 🔍 🔭 ✂️ 📑 📙 ↩️ 🗓️ </h>
           </div>
-          
-          <div class="wp-texttools"> 
+
+          <div class="wp-texttools">
             <div class="wp-font">
               <h> Arial </h>
-               <h> ▽ </h>
+              <h> ▽ </h>
             </div>
             <div class="wp-scale">
               <h> 10 </h>
               <h> ▽ </h>
-            </div>    
-             <div class="wp-style">
-                <h> Western </h>
-               <h> ▽ </h>
-             </div>  
+            </div>
+            <div class="wp-style">
+              <h> Western </h>
+              <h> ▽ </h>
+            </div>
             <div class="wp-text">
-                <h>B I U 🎨 ⊫ ≣ ⫤ ⊩ </h>
-             </div>  
+              <h>B I U 🎨 ⊫ ≣ ⫤ ⊩ </h>
+            </div>
           </div>
-          
-           <div class="wp-texttools"> 
+
+          <div class="wp-texttools">
             <div class="wp-innersc">
               <h>----|----1 </h>
               <h>----|----2 </h>
@@ -472,75 +519,80 @@ color:white;
               <h>----|--- </h>
             </div>
           </div>
-           <div class="wp-paper"> 
-             
-             <!-- Put your text in here -->
-            
-             <h2> Full Name: xxxxxxxxxxx </h2>
-      
-                <h3>Contact Information: </h3>
-                <h5> Phone: +49xxxxxxxxxxx</h5>
-                <h5>Email:</h5>
-                <h5> Location: xxxxxxxxxxxxx, (NRW) Germany</h5>
-      
-                <h3>Objective:</h3>
-                <h5>As a student, I am seeking small jobs and internships in NRW and RLP, Germany, or remote positions. I have
-                  a strong interest in information technology, particularly in deep learning through LLMs and image generation
-                  models. Additionally, I am passionate about game development using Unity or Godot. I have experience with
-                  Java, C#, GDScript, HTML, CSS, JavaScript, React, and Remix. While I am particularly interested in front-end
-                  design, I am eager to learn and expand my skills in any area offered.</h5>
-      
-                <h3>Professional Summary:</h3>
-                <h5>I am a motivated student with a keen interest in information technology, deep learning, and game
-                  development. I have proficiency in Java, GDScript, C#, HTML, CSS, JavaScript, React, and Remix. I have
-                  worked with tools such as Visual Studio Code, Godot Engine, Unity, Unreal Engine, CodePen, and Android
-                  Studio. Additionally, I have experience setting up a home server using OpenMediaVault. I possess the ability
-                  to assist with Android and iOS troubleshooting and I am always eager to expand my knowledge.</h5>
-      
-                <h3>Education:</h3>
-                <h5> Currently pursuing Abitur (expected completion in two years,2025)</h5>
-      
-                <h3>Work Experience:</h3>
-                <h5> No prior work experience</h5>
-      
-                <h3>Skills:</h3>
-                <h5> Programming Languages: Java, GDScript, C#, HTML, CSS, JavaScript, React, Remix
-                  <h5> Tools and Technologies: Visual Studio Code, Godot Engine, Unity, Unreal Engine, CodePen, Android
-                    Studio, OpenMediaVault</h5>
-                  <h5> Language Proficiency: German (native), English (advanced)</h5>
-                  <h5> Problem-solving: Able to troubleshoot and explain solutions effectively</h5>
-                  <h5> PC/Server Building: Knowledge and experience in building PCs and servers</h5>
-                  <h5> Artisanal Experience: Possess some artisanal skills</h5>
-      
-                  <h3>Projects:</h3>
-                  <h5> GitHub: https://github.com/Dragomy</h5>
-                  <h5> Website: https://dragomy.github.io/</h5>
-      
-                  <h3>References:</h3>
-                  <h5>Available upon request</h5>
+          <div class="wp-paper">
+
+            <!-- Put your text in here -->
+
+            <h2> Full Name: xxxxxxxxxxx </h2>
+
+            <h3>Contact Information: </h3>
+            <h5> Phone: +49xxxxxxxxxxx</h5>
+            <h5>Email:</h5>
+            <h5> Location: xxxxxxxxxxxxx, (NRW) Germany</h5>
+
+            <h3>Objective:</h3>
+            <h5>As a student, I am seeking small jobs and internships in NRW and RLP, Germany, or remote positions. I
+              have
+              a strong interest in information technology, particularly in deep learning through LLMs and image
+              generation
+              models. Additionally, I am passionate about game development using Unity or Godot. I have experience with
+              Java, C#, GDScript, HTML, CSS, JavaScript, React, and Remix. While I am particularly interested in
+              front-end
+              design, I am eager to learn and expand my skills in any area offered.</h5>
+
+            <h3>Professional Summary:</h3>
+            <h5>I am a motivated student with a keen interest in information technology, deep learning, and game
+              development. I have proficiency in Java, GDScript, C#, HTML, CSS, JavaScript, React, and Remix. I have
+              worked with tools such as Visual Studio Code, Godot Engine, Unity, Unreal Engine, CodePen, and Android
+              Studio. Additionally, I have experience setting up a home server using OpenMediaVault. I possess the
+              ability
+              to assist with Android and iOS troubleshooting and I am always eager to expand my knowledge.</h5>
+
+            <h3>Education:</h3>
+            <h5> Currently pursuing Abitur (expected completion in two years,2025)</h5>
+
+            <h3>Work Experience:</h3>
+            <h5> No prior work experience</h5>
+
+            <h3>Skills:</h3>
+            <h5> Programming Languages: Java, GDScript, C#, HTML, CSS, JavaScript, React, Remix
+              <h5> Tools and Technologies: Visual Studio Code, Godot Engine, Unity, Unreal Engine, CodePen, Android
+                Studio, OpenMediaVault</h5>
+              <h5> Language Proficiency: German (native), English (advanced)</h5>
+              <h5> Problem-solving: Able to troubleshoot and explain solutions effectively</h5>
+              <h5> PC/Server Building: Knowledge and experience in building PCs and servers</h5>
+              <h5> Artisanal Experience: Possess some artisanal skills</h5>
+
+              <h3>Projects:</h3>
+              <h5> GitHub: https://github.com/Dragomy</h5>
+              <h5> Website: https://dragomy.github.io/</h5>
+
+              <h3>References:</h3>
+              <h5>Available upon request</h5>
           </div>
         </div>
       </div>
-        </div>
-      </div>
-  </body>
-  <script>
-        //Function used to toggle the Curriculum Vitae Window
-function toggleDisplay(elementId) {
-  const element = document.getElementById(elementId);
-  element.style.display = (element.style.display === 'none') ? 'block' : 'none';
-}
+    </div>
+  </div>
+</body>
+<script>
+  //Function used to toggle the Curriculum Vitae Window
+  function toggleDisplay(elementId) {
+    const element = document.getElementById(elementId);
+    element.style.display = (element.style.display === 'none') ? 'block' : 'none';
+  }
 
-function addButtonClickListener(buttonId, divId) {
-  const button = document.getElementById(buttonId);
-  const div = document.getElementById(divId);
-  button.addEventListener('click', function() {
-    toggleDisplay(divId);
-  });
-}
+  function addButtonClickListener(buttonId, divId) {
+    const button = document.getElementById(buttonId);
+    const div = document.getElementById(divId);
+    button.addEventListener('click', function () {
+      toggleDisplay(divId);
+    });
+  }
 
-addButtonClickListener('CurViButton', 'CurriculumVitae');
-addButtonClickListener('CurViClose', 'CurriculumVitae');
+  addButtonClickListener('CurViButton', 'CurriculumVitae');
+  addButtonClickListener('CurViClose', 'CurriculumVitae');
 
-  </script> 
+</script>
+
 </html>
